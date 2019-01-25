@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
+import Contact from '../components/Contact';
 import Page from '../components/Page';
 
 const PageTemplate = ({ data }) => {
@@ -19,14 +20,28 @@ const PageTemplate = ({ data }) => {
 
   const metaDescription = pageDescription !== null ? pageDescription : siteSubtitle;
 
-  return (
-    <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription}>
-      <Sidebar />
-      <Page title={pageTitle}>
-        <div dangerouslySetInnerHTML={{ __html: pageBody }} />
-      </Page>
-    </Layout>
-  );
+  if (pageTitle == 'Contact') {
+    return (
+      <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription}>
+        <Sidebar />
+        <Page title={pageTitle}>
+          <div dangerouslySetInnerHTML={{ __html: pageBody }} />
+          <Contact />
+        </Page>
+      </Layout>
+    );
+
+  } else {
+
+    return (
+      <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription}>
+        <Sidebar />
+        <Page title={pageTitle}>
+          <div dangerouslySetInnerHTML={{ __html: pageBody }} />
+        </Page>
+      </Layout>
+    );
+  }
 };
 
 export const query = graphql`

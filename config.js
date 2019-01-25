@@ -1,38 +1,45 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  url: 'https://bloodbee.space',
+  title: 'Bloodbee - Web developer, freelancer, entrepreneur',
+  subtitle: 'Web developer, freelancer, entrepreneur. Also cryptocurrencies, chatbots, blockchain enthusiast.',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-73379983-2',
   menu: [
     {
-      label: 'Articles',
+      label: 'Home',
       path: '/'
     },
-    {
-      label: 'About me',
-      path: '/pages/about'
+    /*{
+      label: 'Articles',
+      path: '/posts'
     },
     {
-      label: 'Contact me',
-      path: '/pages/contacts'
+      label: 'Projects',
+      path: '/projects'
+    },
+    {
+      label: 'CV',
+      path: '/media/CVENG.pdf'
+    },*/
+    {
+      label: 'Contact',
+      path: '/contact'
     }
   ],
   author: {
-    name: 'John Doe',
+    name: 'Mathieu "Bloodbee" Dufour',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'Web developer, freelancer, entrepreneur. Also cryptocurrencies, chatbots, blockchain enthusiast.',
     contacts: {
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vkontakte: '#'
+      email: 'mathieu_dufour@hotmail.fr',
+      github: 'https://github.com/bloodbee',
+      linkedin: 'https://www.linkedin.com/in/dufourmathieu',
+      twitter: 'https://twitter.com/Mathieu_Dufour',
+      rss: '#'
     }
   }
 };
