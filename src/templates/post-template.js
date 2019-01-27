@@ -33,7 +33,6 @@ export const query = graphql`
             twitter
           }
         }
-        disqusShortname
         subtitle
         title
         url
@@ -50,6 +49,7 @@ export const query = graphql`
         description
         tags
         title
+        template
       }
     }
   }

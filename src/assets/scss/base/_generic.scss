@@ -1,4 +1,4 @@
-/** 
+/**
  * Generic
  */
 html {
@@ -107,6 +107,10 @@ strong {
   font-weight: 600;
 }
 
+.italic {
+  color: $color-primary;
+}
+
 ul {
   list-style: square;
   @include margin-bottom(1);
@@ -127,6 +131,7 @@ blockquote {
   padding: 0;
   font-style: italic;
   text-align: center;
+  color: $color-secondary;
 }
 
 figure {

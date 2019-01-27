@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import IndexTemplate from './index-template';
+import PostsListTemplate from './posts-list-template';
 
-describe('IndexTemplate', () => {
+describe('PostsListTemplate', () => {
   const props = {
     data: {
       allMarkdownRemark: {
@@ -54,7 +54,7 @@ describe('IndexTemplate', () => {
   };
 
   it('renders correctly', () => {
-    const tree = renderer.create(<IndexTemplate {...props} />).toJSON();
+    const tree = renderer.create(<PostsListTemplate {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

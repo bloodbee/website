@@ -41,7 +41,7 @@ const CategoryTemplate = ({ data, pageContext }) => {
 };
 
 export const query = graphql`
-  query CategoryPage($category: String, $postsLimit: Int!, $postsOffset: Int!) {
+  query CategoryPage($category: String, $limit: Int!, $offset: Int!) {
     site {
       siteMetadata {
         title
@@ -49,13 +49,14 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-        limit: $postsLimit,
-        skip: $postsOffset,
-        filter: { frontmatter: { category: { eq: $category }, template: { eq: "post" }, draft: { ne: true } } },
+        limit: $limit,
+        skip: $offset,
+        filter: { frontmatter: { category: { eq: $category }, template: { in: ["post", "project"] }, draft: { ne: true } } },
         sort: { order: DESC, fields: [frontmatter___date] }
       ){
       edges {
         node {
+          id
           fields {
             categorySlug
             slug
@@ -65,6 +66,7 @@ export const query = graphql`
             description
             category
             title
+            template
           }
         }
       }

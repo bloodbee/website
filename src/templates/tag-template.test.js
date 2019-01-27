@@ -19,6 +19,7 @@ describe('TagTemplate', () => {
         edges: [
           {
             node: {
+              id: 1,
               fields: {
                 slug: '/test_0',
                 categorySlug: '/test'
@@ -27,12 +28,14 @@ describe('TagTemplate', () => {
                 date: '2016-09-01',
                 description: 'test_0',
                 category: 'test',
-                title: 'test_0'
+                title: 'test_0',
+                template: 'post'
               }
             }
           },
           {
             node: {
+              id: 2,
               fields: {
                 slug: '/test_1',
                 categorySlug: '/test'
@@ -41,7 +44,8 @@ describe('TagTemplate', () => {
                 date: '2016-09-01',
                 description: 'test_1',
                 category: 'test',
-                title: 'test_1'
+                title: 'test_1',
+                template: 'project'
               }
             }
           }

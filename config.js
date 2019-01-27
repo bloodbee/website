@@ -5,21 +5,20 @@ module.exports = {
   title: 'Bloodbee - Web developer, freelancer, entrepreneur',
   subtitle: 'Web developer, freelancer, entrepreneur. Also cryptocurrencies, chatbots, blockchain enthusiast.',
   copyright: '© All rights reserved.',
-  disqusShortname: '',
-  postsPerPage: 4,
+  limitPerPage: 4,
   googleAnalyticsId: 'UA-73379983-2',
   menu: [
     {
       label: 'Home',
       path: '/'
     },
-    /*{
-      label: 'Articles',
-      path: '/posts'
-    },
     {
       label: 'Projects',
       path: '/projects'
+    },
+    /*{
+      label: 'Articles',
+      path: '/posts'
     },
     {
       label: 'CV',

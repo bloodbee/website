@@ -15,7 +15,8 @@ describe('Feed', () => {
             date: '2016-09-01',
             description: 'test_0',
             category: 'test_0',
-            title: 'test_0'
+            title: 'test_0',
+            template: 'post'
           }
         }
       },
@@ -29,7 +30,8 @@ describe('Feed', () => {
             date: '2016-09-01',
             description: 'test_1',
             category: 'test_1',
-            title: 'test_1'
+            title: 'test_1',
+            template: 'project'
           }
         }
       }
