@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import { Link } from 'gatsby';
-import styles from './sharing.module.scss';
+import styles from './Sharing.module.scss';
 
 const cx = classNames.bind(styles);
 
