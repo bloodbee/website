@@ -6,7 +6,8 @@ import Project from '../components/Project';
 const ProjectTemplate = ({ data }) => {
   const {
     title: siteTitle,
-    subtitle: siteSubtitle
+    subtitle: siteSubtitle,
+    url: url
   } = data.site.siteMetadata;
 
   const {
@@ -18,7 +19,7 @@ const ProjectTemplate = ({ data }) => {
 
   return (
     <Layout title={`${projectTitle} - ${siteTitle}`} description={metaDescription}>
-      <Project project={data.markdownRemark} />
+      <Project project={data.markdownRemark} metadata={data.site.siteMetadata}/>
     </Layout>
   );
 };

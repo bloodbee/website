@@ -5,19 +5,21 @@ import styles from './Sharing.module.scss';
 
 const cx = classNames.bind(styles);
 
-const Sharing = () => {
+const Sharing = ({ metadata }) => {
+  console.log(metadata);
 
   let classIconBase = cx('resp-sharing-button__icon', 'resp-sharing-button__icon--solidcircle');
 
-  let classFacebook = cx('resp-sharing-button', 'resp-sharing-button--facebook', 'resp-sharing-button--large');
-  let classTwitter = cx('resp-sharing-button', 'resp-sharing-button--twitter', 'resp-sharing-button--large');
-  let classEmail = cx('resp-sharing-button', 'resp-sharing-button--email', 'resp-sharing-button--large');
-  let classLinkedin = cx('resp-sharing-button', 'resp-sharing-button--linkedin', 'resp-sharing-button--large');
-  let classReddit = cx('resp-sharing-button', 'resp-sharing-button--reddit', 'resp-sharing-button--large');
-  let classWhatsapp = cx('resp-sharing-button', 'resp-sharing-button--whatsapp', 'resp-sharing-button--large');
+  let classFacebook = cx('resp-sharing-button', 'resp-sharing-button--facebook', 'resp-sharing-button--small');
+  let classTwitter = cx('resp-sharing-button', 'resp-sharing-button--twitter', 'resp-sharing-button--small');
+  let classEmail = cx('resp-sharing-button', 'resp-sharing-button--email', 'resp-sharing-button--small');
+  let classLinkedin = cx('resp-sharing-button', 'resp-sharing-button--linkedin', 'resp-sharing-button--small');
+  let classReddit = cx('resp-sharing-button', 'resp-sharing-button--reddit', 'resp-sharing-button--small');
+  let classWhatsapp = cx('resp-sharing-button', 'resp-sharing-button--whatsapp', 'resp-sharing-button--small');
 
   return (
     <div className={styles['sharing']}>
+      Share
       <a className={styles["resp-sharing-button__link"]} href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbloodbee.space" target="_blank" rel="noopener" aria-label="Share on Facebook">
         <div className={classFacebook}><div aria-hidden="true" className={classIconBase}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm3.6 11.5h-2.1v7h-3v-7h-2v-2h2V8.34c0-1.1.35-2.82 2.65-2.82h2.35v2.3h-1.4c-.25 0-.6.13-.6.66V9.5h2.34l-.24 2z"/></svg>
@@ -35,7 +37,7 @@ const Sharing = () => {
       </a>
       <a className={styles["resp-sharing-button__link"]} href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fbloodbee.space&amp;title=My%20personal%20website&amp;summary=My%20personal%20website&amp;source=https%3A%2F%2Fbloodbee.space" target="_blank" rel="noopener" aria-label="Share on LinkedIn">
         <div className={classLinkedin}><div aria-hidden="true" className={classIconBase}>
-          <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24">
+          <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enableBackground="new 0 0 24 24">
               <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M9.5,16.5h-2v-7h2V16.5z M8.5,7.5 c-0.553,0-1-0.448-1-1c0-0.552,0.447-1,1-1s1,0.448,1,1C9.5,7.052,9.053,7.5,8.5,7.5z M18.5,16.5h-3V13c0-0.277-0.225-0.5-0.5-0.5 c-0.276,0-0.5,0.223-0.5,0.5v3.5h-3c0,0,0.031-6.478,0-7h3v0.835c0,0,0.457-0.753,1.707-0.753c1.55,0,2.293,1.12,2.293,3.296V16.5z" />
           </svg>
           </div></div>
