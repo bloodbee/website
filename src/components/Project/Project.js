@@ -7,20 +7,23 @@ import Tags from './Tags';
 import Sharing from '../Sharing';
 import styles from './Project.module.scss';
 
-const Project = ({ project, metadata}) => {
+const Project = ({ project, url}) => {
   const {
     tags,
     title,
-    date
+    date,
+    slug
   } = project.frontmatter;
 
   const { html } = project;
   const { tagSlugs } = project.fields;
 
+  const urlProject = url + slug;
+
   return (
     <div className={styles['project']}>
       <Link className={styles['project__home-button']} to="/projects">All Projects</Link>
-      <Sharing metadata={metadata} />
+      <Sharing url={urlProject} text={title}/>
 
       <div className={styles['project__content']}>
         <Content body={html} title={title} />

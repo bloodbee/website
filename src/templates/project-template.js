@@ -16,10 +16,9 @@ const ProjectTemplate = ({ data }) => {
   } = data.markdownRemark.frontmatter;
 
   const metaDescription = projectDescription !== null ? projectDescription : siteSubtitle;
-
   return (
     <Layout title={`${projectTitle} - ${siteTitle}`} description={metaDescription}>
-      <Project project={data.markdownRemark} metadata={data.site.siteMetadata}/>
+      <Project project={data.markdownRemark} url={url}/>
     </Layout>
   );
 };
@@ -45,6 +44,7 @@ export const query = graphql`
         tags
         title
         template
+        slug
         image1
       }
     }
