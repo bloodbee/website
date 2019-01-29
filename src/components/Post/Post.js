@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Author from './Author';
-import Content from './Content';
-import Meta from './Meta';
-import Tags from './Tags';
+import Author from '../Author';
+import Content from '../Content';
+import Meta from '../Meta';
+import Tags from '../Tags';
 import styles from './Post.module.scss';
 
 const Post = ({ post }) => {

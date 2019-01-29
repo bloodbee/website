@@ -64,8 +64,12 @@ function RenderFeed(feed) {
         <h2 className={styles['feed__item-title']}>
           <Link className={styles['feed__item-title-link']} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
         </h2>
-        <img src={withPrefix(edge.node.frontmatter.image1)} />
-        <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>See</Link>
+        <Link className={styles['feed__item-readmore-project']} to={edge.node.fields.slug}>
+          <img src={withPrefix(edge.node.frontmatter.image1)} />
+          <div class={styles['link']}>
+            <div class={styles['action']}>See</div>
+          </div>
+        </Link>
       </div>
     );
   }

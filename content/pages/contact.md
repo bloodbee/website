@@ -6,7 +6,7 @@ slug: "/contact"
 
 ![Photo by Joanna Kosinska on Unsplash](/media/image-4.jpg)
 
-I try not to be overbooked and overwhelmed by the projects, so I suggest you to contact me in these cases :
+I try not to be overbooked and overwhelmed by the projects, so I suggest that you contact me in these cases:
 + You have a website, blog, whatever **idea** and need someone to handle that for you.
 + You have a company and you want a **chatbot** to reduce costs for your support.
 + You have a company and you can offer me a **good opportunity**. (Why not?)

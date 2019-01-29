@@ -1,11 +1,14 @@
 import React from 'react';
+import Disqus from 'disqus-react';
 import { Link } from 'gatsby';
-import Content from './Content';
-import Author from './Author';
-import Meta from './Meta';
-import Tags from './Tags';
+import Content from '../Content';
+import Author from '../Author';
+import Meta from '../Meta';
+import Tags from '../Tags';
 import Sharing from '../Sharing';
 import styles from './Project.module.scss';
+
+const siteConfig = require('../../../config.js');
 
 const Project = ({ project, url}) => {
   const {
@@ -20,6 +23,13 @@ const Project = ({ project, url}) => {
 
   const urlProject = url + slug;
 
+  const disqusShortname = siteConfig.disqusShortname;
+  const disqusConfig = {
+      url: urlProject,
+      identifier: project.id,
+      title: title,
+  };
+
   return (
     <div className={styles['project']}>
       <Link className={styles['project__home-button']} to="/projects">All Projects</Link>
@@ -33,6 +43,7 @@ const Project = ({ project, url}) => {
         <Meta date={date} />
         <Tags tags={tags} tagSlugs={tagSlugs} />
         <Author />
+        <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
       </div>
 
     </div>

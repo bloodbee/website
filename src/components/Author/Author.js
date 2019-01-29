@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, StaticQuery } from 'gatsby';
-import { getContactHref } from '../../../utils';
+import { getContactHref } from '../../utils';
 import styles from './Author.module.scss';
 
 export const PureAuthor = ({ data }) => {
