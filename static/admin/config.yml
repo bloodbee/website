@@ -30,9 +30,13 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template", name: "template", widget: "hidden", default: "post"}
+      - {label: "Template", name: "template", widget: "hidden", default: "project"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Customer", name: "customer", widget: "string"}
+      - {label: "Website", name: "website", widget: "string"}
+      - {label: "Month", name: "month", widget: "select", options: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']}
+      - {label: "Year", name: "year", widget: "date"}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}

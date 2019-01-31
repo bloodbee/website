@@ -11,6 +11,9 @@ const getContactHref = (name, contact) => {
     case 'vkontakte':
       href = `https://vk.com/${contact}`;
       break;
+    case 'linkedin':
+      href = `https://linkedin.com/in/${contact}`;
+      break;
     case 'telegram':
       href = `telegram:${contact}`;
       break;

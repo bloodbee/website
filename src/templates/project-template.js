@@ -46,6 +46,10 @@ export const query = graphql`
         template
         slug
         image1
+        customer
+        website
+        month
+        year
       }
     }
   }

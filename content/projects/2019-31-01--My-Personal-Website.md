@@ -13,6 +13,10 @@ tags:
   - "Netlify"
 description: "This is the launch of my personal website!"
 image1: "/media/image-2.jpg"
+website: "https://bloodbee.space"
+customer: "Myself"
+month: "January"
+year: "2019"
 ---
 
 **This is the first project that I publish in my space**

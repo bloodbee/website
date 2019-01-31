@@ -18,6 +18,10 @@ let animateClass = classNames.bind(null, animate);
 
 const Project = ({ project, url}) => {
   const {
+    customer,
+    website,
+    month,
+    year,
     tags,
     title,
     date,
@@ -36,10 +40,6 @@ const Project = ({ project, url}) => {
       title: title,
   };
 
-
-  let divClass = classNames(styleClass('project'), animateClass('animated'), animateClass('fadeIn'));
-  console.log(styleClass('project'));
-
   return (
     <div className={styles['project']}>
       <Link className={styles['project__home-button']} to="/projects">All Projects</Link>
@@ -47,6 +47,16 @@ const Project = ({ project, url}) => {
 
       <div className={styles['project__content']}>
         <Content body={html} title={title} />
+      </div>
+
+      <div>
+        Customer : {customer}
+      </div>
+      <div>
+        Website : {website}
+      </div>
+      <div>
+        {month} {year}
       </div>
 
       <div className={styles['project__footer']}>
