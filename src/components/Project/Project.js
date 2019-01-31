@@ -1,20 +1,16 @@
 import React from 'react';
 import Disqus from 'disqus-react';
 import { Link } from 'gatsby';
+import moment from 'moment';
+
 import Content from '../Content';
 import Author from '../Author';
-import Meta from '../Meta';
 import Tags from '../Tags';
 import Sharing from '../Sharing';
 
-import classNames from 'classnames/bind';
 import styles from './Project.module.scss';
-import animate from '../../assets/scss/animate.scss';
 
 const siteConfig = require('../../../config.js');
-
-let styleClass = classNames.bind(null, styles);
-let animateClass = classNames.bind(null, animate);
 
 const Project = ({ project, url}) => {
   const {
@@ -49,18 +45,19 @@ const Project = ({ project, url}) => {
         <Content body={html} title={title} />
       </div>
 
-      <div>
-        Customer : {customer}
-      </div>
-      <div>
-        Website : {website}
-      </div>
-      <div>
-        {month} {year}
-      </div>
-
       <div className={styles['project__footer']}>
-        <Meta date={date} />
+        <p className={styles['project__footer-item']}>
+          Customer : {customer}
+        </p>
+        <p className={styles['project__footer-item']}>
+          Website : {website}
+        </p>
+        <p className={styles['project__footer-item']}>
+          Created {month} {year}
+        </p>
+        <p className={styles['project__footer-item']}>
+          Published {moment(date).format('D MMM YYYY')}
+        </p>
         <Tags tags={tags} tagSlugs={tagSlugs} />
         <Author />
         <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />

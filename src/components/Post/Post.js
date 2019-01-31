@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import moment from 'moment';
+
 import Author from '../Author';
 import Content from '../Content';
-import Meta from '../Meta';
 import Tags from '../Tags';
+
 import styles from './Post.module.scss';
 
 const Post = ({ post }) => {
@@ -25,7 +27,9 @@ const Post = ({ post }) => {
       </div>
 
       <div className={styles['post__footer']}>
-        <Meta date={date} />
+        <p className={styles['post__footer-item']}>
+          Published {moment(date).format('D MMM YYYY')}
+        </p>
         <Tags tags={tags} tagSlugs={tagSlugs} />
         <Author />
       </div>

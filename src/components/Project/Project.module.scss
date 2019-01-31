@@ -6,6 +6,11 @@
     max-width: $layout-post-width;
     margin: 0 auto;
     padding: 0 15px;
+    border-top: 1px solid $color-gray-border;
+
+    &-item {
+      font-style: italic;
+    }
   }
 
   &__comments {
