@@ -8,7 +8,9 @@ date: 2019-01-31T06:43:49.334Z
 description: Use awesome functionnalities for your multiple environment algolia.
 category: Web development
 tags:
-  - ''
+  - algolia
+  - side project
+  - multiple environment
 ---
 Algolia is a hosted search engine that can provide realtime search into your website for your users.
 
