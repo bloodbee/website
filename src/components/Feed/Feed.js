@@ -16,7 +16,7 @@ function RenderFeed(feed) {
   const edge = feed.edge;
   if (edge.node.frontmatter.template == "post") {
     return (
-      <div className={styles['feed__item']} key={edge.node.id}>
+      <div className={styles['feed__item']}>
         <div className={styles['feed__item-meta']}>
           <time className={styles['feed__item-meta-time']} dateTime={moment(edge.node.frontmatter.date).format('MMMM D, YYYY')}>
             {moment(edge.node.frontmatter.date).format('DD MMMM YYYY')}
@@ -43,7 +43,7 @@ function RenderFeed(feed) {
     );
   } else if (edge.node.frontmatter.template == 'project') {
     return (
-      <div className={styles['feed__item']} key={edge.node.id}>
+      <div className={styles['feed__item']}>
         <div className={styles['feed__item-meta']}>
           <time className={styles['feed__item-meta-time']} dateTime={moment(edge.node.frontmatter.date).format('MMMM D, YYYY')}>
             {moment(edge.node.frontmatter.date).format('DD MMMM YYYY')}
@@ -66,8 +66,8 @@ function RenderFeed(feed) {
         </h2>
         <Link className={styles['feed__item-readmore-project']} to={edge.node.fields.slug}>
           <img src={withPrefix(edge.node.frontmatter.image1)} />
-          <div class={styles['link']}>
-            <div class={styles['action']}>See</div>
+          <div className={styles['link']}>
+            <div className={styles['action']}>See</div>
           </div>
         </Link>
       </div>
@@ -78,7 +78,7 @@ function RenderFeed(feed) {
 const Feed = ({ edges }) => (
   <div className={styles['feed']}>
     {edges.map((edge) => (
-      <RenderFeed edge={edge} />
+      <RenderFeed edge={edge} key={edge.node.id} />
     ))}
   </div>
 );

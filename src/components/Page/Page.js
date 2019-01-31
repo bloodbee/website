@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Page.module.scss';
 
+
 const Page = ({ title, children }) => (
   <div className={styles['page']}>
     <div className={styles['page__inner']}>

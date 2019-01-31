@@ -6,9 +6,15 @@ import Author from '../Author';
 import Meta from '../Meta';
 import Tags from '../Tags';
 import Sharing from '../Sharing';
+
+import classNames from 'classnames/bind';
 import styles from './Project.module.scss';
+import animate from '../../assets/scss/animate.scss';
 
 const siteConfig = require('../../../config.js');
+
+let styleClass = classNames.bind(null, styles);
+let animateClass = classNames.bind(null, animate);
 
 const Project = ({ project, url}) => {
   const {
@@ -29,6 +35,10 @@ const Project = ({ project, url}) => {
       identifier: project.id,
       title: title,
   };
+
+
+  let divClass = classNames(styleClass('project'), animateClass('animated'), animateClass('fadeIn'));
+  console.log(styleClass('project'));
 
   return (
     <div className={styles['project']}>
