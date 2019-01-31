@@ -1,8 +1,12 @@
 ---
 template: project
 title: Algolia Extended
-slug: "/projects/use-awesome-functionnalities-for-your-multiple-environment-algolia"
-draft: true
+slug: /projects/use-awesome-functionnalities-for-your-multiple-environment-algolia
+customer: Myself
+website: 'https://www.algoliaextended.com/'
+month: October
+year: '2017'
+draft: false
 date: 2019-01-31T06:43:49.334Z
 description: Use awesome functionnalities for your multiple environment algolia.
 category: Web development
@@ -10,11 +14,7 @@ tags:
   - algolia
   - side project
   - multiple environment
-image1: "/media/algolia-extended-homepage.png"
-website: "https://www.algoliaextended.com/"
-customer: "Myself"
-month: ""
-year: "2017"
+image1: /media/algolia-extended-homepage.png
 ---
 Algolia is a hosted search engine that can provide realtime search into your website for your users.
 
