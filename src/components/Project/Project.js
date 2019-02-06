@@ -28,6 +28,7 @@ const Project = ({ project, url}) => {
   const { tagSlugs } = project.fields;
 
   const urlProject = url + slug;
+  const websiteUrl = website + '?utm_source=bloodbee.space&utm_medium=projects';
 
   const disqusShortname = siteConfig.disqusShortname;
   const disqusConfig = {
@@ -50,7 +51,7 @@ const Project = ({ project, url}) => {
           Customer : {customer}
         </p>
         <p className={styles['project__footer-item']}>
-          Website : {website}
+          Website : <a href={websiteUrl} target="_blank">{website}</a>
         </p>
         <p className={styles['project__footer-item']}>
           Created {month} {year}
