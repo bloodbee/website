@@ -2,10 +2,6 @@
 template: project
 title: Algolia Extended
 slug: /projects/use-awesome-functionnalities-for-your-multiple-environment-algolia
-customer: Myself
-website: 'https://www.algoliaextended.com/'
-month: October
-year: '2017'
 draft: false
 date: 2019-01-31T06:43:49.334Z
 description: Use awesome functionnalities for your multiple environment algolia.
@@ -15,6 +11,10 @@ tags:
   - side project
   - multiple environment
 image1: /media/algolia-extended-homepage.png
+customer: Myself
+website: 'https://www.algoliaextended.com/'
+month: October
+year: '2017'
 ---
 Algolia is a hosted search engine that can provide realtime search into your website for your users.
 
@@ -30,6 +30,5 @@ With this website, you can for example do these operations :
 * Duplicate partially an environment to a new one.
 * Full or partially clean an environment.
 
-Algolia Extended doesn't intend to replace Algolia native dashboard, just to give you more possibilities.
-
-Algolia Extended isn't affiliate with Algolia. Use it at your own risk, but be aware that no datas or api keys are collected !
+Algolia Extended doesn't intend to replace Algolia native dashboard, just to give it more possibilities.
+Plus, Algolia Extended isn't affiliate with Algolia. Use it at your own risk, but be aware that no datas or api keys are collected.

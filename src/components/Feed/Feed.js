@@ -42,6 +42,20 @@ function RenderFeed(feed) {
       </div>
     );
   } else if (edge.node.frontmatter.template == 'project') {
+
+    // component image
+    console.log(edge.node.frontmatter.image1);
+    let description = "";
+    if (edge.node.frontmatter.image1 == null || edge.node.frontmatter.image1 == "") {
+      description = <Link className={styles['feed__item-readmore-project']} to={edge.node.fields.slug}>
+        <img src={withPrefix(edge.node.frontmatter.image1)} />
+        <div className={styles['link']}>
+          <div className={styles['action']}>See</div>
+        </div>
+      </Link>;
+    } else {
+      description = <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>;
+    }
     return (
       <div className={styles['feed__item']}>
         <div className={styles['feed__item-meta']}>
@@ -64,12 +78,7 @@ function RenderFeed(feed) {
         <h2 className={styles['feed__item-title']}>
           <Link className={styles['feed__item-title-link']} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
         </h2>
-        <Link className={styles['feed__item-readmore-project']} to={edge.node.fields.slug}>
-          <img src={withPrefix(edge.node.frontmatter.image1)} />
-          <div className={styles['link']}>
-            <div className={styles['action']}>See</div>
-          </div>
-        </Link>
+        {description}
       </div>
     );
   }
