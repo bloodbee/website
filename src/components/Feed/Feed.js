@@ -15,6 +15,8 @@ function getListLink(edge) {
 function RenderFeed(feed) {
   const edge = feed.edge;
   if (edge.node.frontmatter.template == "post") {
+
+    // render
     return (
       <div className={styles['feed__item']}>
         <div className={styles['feed__item-meta']}>
@@ -44,11 +46,11 @@ function RenderFeed(feed) {
   } else if (edge.node.frontmatter.template == 'project') {
 
     // component image
-    console.log(edge.node.frontmatter.image1);
+    let projectImg = edge.node.frontmatter.image1;
     let description = "";
-    if (edge.node.frontmatter.image1 == null || edge.node.frontmatter.image1 == "") {
+    if (projectImg.trim() != null && projectImg.trim() != "") {
       description = <Link className={styles['feed__item-readmore-project']} to={edge.node.fields.slug}>
-        <img src={withPrefix(edge.node.frontmatter.image1)} />
+        <img src={withPrefix(projectImg)} />
         <div className={styles['link']}>
           <div className={styles['action']}>See</div>
         </div>
@@ -56,6 +58,8 @@ function RenderFeed(feed) {
     } else {
       description = <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>;
     }
+
+    // render
     return (
       <div className={styles['feed__item']}>
         <div className={styles['feed__item-meta']}>
@@ -86,8 +90,8 @@ function RenderFeed(feed) {
 
 const Feed = ({ edges }) => (
   <div className={styles['feed']}>
-    {edges.map((edge) => (
-      <RenderFeed edge={edge} key={edge.node.id} />
+    {edges.map((edge, index) => (
+      <RenderFeed edge={edge} key={index} />
     ))}
   </div>
 );

@@ -12,6 +12,6 @@ Passionate about computers for many years, and more specifically WEB technologie
 
 **I will use this space to test my ideas, show you my work, speak about what I like and don't like. Sometimes it could be awesome or just stupid. But hey, that's my space.**
 
-*From scratch or frameworks, from backend or frontend, in the cloud or not, versioned or not, as I'm trying to become a full-stack web developer, I can be anywhere or just somewhere.*
+<blockquote>From scratch or frameworks, from backend or frontend, in the cloud or not, versioned or not, as I'm trying to become a full-stack web developer, I can be anywhere or just somewhere.</blockquote>
 
 Feel free to [contact me](/contact) for more information about my projects.
