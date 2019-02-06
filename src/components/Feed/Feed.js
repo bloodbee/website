@@ -48,7 +48,7 @@ function RenderFeed(feed) {
     // component image
     let projectImg = edge.node.frontmatter.image1;
     let description = "";
-    if (projectImg.trim() != null && projectImg.trim() != "") {
+    if (projectImg != null && projectImg.trim() != "") {
       description = <Link className={styles['feed__item-readmore-project']} to={edge.node.fields.slug}>
         <img src={withPrefix(projectImg)} />
         <div className={styles['link']}>
