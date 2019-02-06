@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
 const Contact = () => {
 
   return (
-    <form name="contact" className={styles['contact']} netlify>
+    <form name="contact" className={styles['contact']} data-netlify="true">
       <p>
         <label>Name</label>
         <input type="text" name="name" />
