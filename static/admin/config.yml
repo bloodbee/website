@@ -34,9 +34,10 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Customer", name: "customer", widget: "string"}
-      - {label: "Website", name: "website", widget: "string"}
-      - {label: "Month", name: "month", widget: "select", options: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']}
-      - {label: "Year", name: "year", widget: "date"}
+      - {label: "Website", name: "website", widget: "string", required: false}
+      - {label: "Git", name: "git", widget: "string"}
+      - {label: "Month", name: "month", widget: "select", options: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], required: false}
+      - {label: "Year", name: "year", widget: "date", required: false}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
