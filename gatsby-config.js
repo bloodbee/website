@@ -162,6 +162,14 @@ module.exports = {
         icon: 'static/photo.jpg'
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://bloodbee.space',
+        sitemap: 'https://bloodbee.space/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',

@@ -22,7 +22,7 @@ const PageTemplate = ({ data }) => {
 
   if (pageTitle == 'Contact') {
     return (
-      <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription}>
+      <Layout title={`${siteTitle} | ${pageTitle}`} description={metaDescription}>
         <Sidebar />
         <Page title={pageTitle}>
           <div dangerouslySetInnerHTML={{ __html: pageBody }} />
@@ -34,7 +34,7 @@ const PageTemplate = ({ data }) => {
   } else {
 
     return (
-      <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription}>
+      <Layout title={`${siteTitle} | ${pageTitle}`} description={metaDescription}>
         <Sidebar />
         <Page title={pageTitle}>
           <div dangerouslySetInnerHTML={{ __html: pageBody }} />
