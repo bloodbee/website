@@ -50,7 +50,7 @@ function RenderFeed(feed) {
     let description = "";
     if (projectImg != null && projectImg.trim() != "") {
       description = <Link className={styles['feed__item-readmore-project']} to={edge.node.fields.slug}>
-        <img src={withPrefix(projectImg)} />
+        <img alt={edge.node.frontmatter.title} src={withPrefix(projectImg)} />
         <div className={styles['link']}>
           <div className={styles['action']}>See</div>
         </div>
