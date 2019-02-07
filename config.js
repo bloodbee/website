@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://bloodbee.space',
   title: 'Bloodbee - Web developer, freelancer, entrepreneur',
-  subtitle: 'Web developer, freelancer, entrepreneur. Also cryptocurrencies, chatbots, blockchain enthusiast.',
+  subtitle: 'Web developer, freelancer, entrepreneur. Also cryptocurrencies, chatbots, blockchain enthusiast, websites and online projects creator',
   copyright: '© All rights reserved.',
   disqusShortname: 'bloodbeespace',
   limitPerPage: 4,
@@ -33,13 +33,13 @@ module.exports = {
   author: {
     name: 'Mathieu "Bloodbee" Dufour',
     photo: '/photo.jpg',
-    bio: 'Web developer, freelancer, entrepreneur. Also cryptocurrencies, chatbots, blockchain enthusiast.',
+    bio: 'Web developer, freelancer, entrepreneur. Also cryptocurrencies, chatbots, blockchain enthusiast. I started learning IT around 13 years old and I never stopped.',
     contacts: {
       email: 'mathieu_dufour@hotmail.fr',
-      github: 'https://github.com/bloodbee',
-      linkedin: 'https://www.linkedin.com/in/dufourmathieu',
-      twitter: 'https://twitter.com/Mathieu_Dufour',
-      rss: '#'
+      github: 'bloodbee',
+      linkedin: 'dufourmathieu',
+      twitter: 'Mathieu_Dufour',
+      rss: 'rss.xml'
     }
   }
 };

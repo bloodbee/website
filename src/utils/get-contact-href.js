@@ -20,6 +20,9 @@ const getContactHref = (name, contact) => {
     case 'email':
       href = `mailto:${contact}`;
       break;
+    case 'rss':
+      href = `https://bloodbee.space/${contact}`;
+      break;
     default:
       href = contact;
       break;
