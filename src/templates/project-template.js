@@ -17,7 +17,7 @@ const ProjectTemplate = ({ data }) => {
 
   const metaDescription = projectDescription !== null ? projectDescription : siteSubtitle;
   return (
-    <Layout title={`${projectTitle} - ${siteTitle}`} description={metaDescription}>
+    <Layout title={`${projectTitle} | ${siteTitle}`} description={metaDescription}>
       <Project project={data.markdownRemark} url={url}/>
     </Layout>
   );

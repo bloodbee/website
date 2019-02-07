@@ -21,7 +21,7 @@ const ProjectsListTemplate = ({ data, pageContext }) => {
   } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `Projects - Page ${currentPage} - ${siteTitle}` : `Projects - ${siteTitle}`;
+  const pageTitle = currentPage > 0 ? `Projects - Page ${currentPage} | ${siteTitle}` : `Projects | ${siteTitle}`;
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
