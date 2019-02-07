@@ -6,9 +6,9 @@ slug: "/"
 
 Welcome into my space !
 
-![Photo by Vincentiu Solomon on Unsplash.](/media/image-2.jpg)
-
 Passionate about computers for many years, and more specifically WEB technologies. My job gave me the opportunities to work on various projects, each one more formative than the other, in order to reach today a total fulfillment in what I undertake at the professional level.
+
+![Photo by Vincentiu Solomon on Unsplash.](/media/image-2.jpg)
 
 **I will use this space to test my ideas, show you my work, speak about what I like and don't like. Sometimes it could be awesome or just stupid. But hey, that's my space.**
 
