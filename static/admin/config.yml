@@ -35,7 +35,7 @@ collections:
       - {label: "Slug", name: "slug", widget: "string"}
       - {label: "Customer", name: "customer", widget: "string"}
       - {label: "Website", name: "website", widget: "string", required: false}
-      - {label: "Git", name: "git", widget: "string"}
+      - {label: "Git", name: "git", widget: "string", required: false}
       - {label: "Month", name: "month", widget: "select", options: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], required: false}
       - {label: "Year", name: "year", widget: "date", required: false}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}

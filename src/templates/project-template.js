@@ -47,7 +47,6 @@ export const query = graphql`
         slug
         image1
         customer
-        website
         month
         year
       }
