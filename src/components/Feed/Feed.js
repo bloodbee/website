@@ -51,9 +51,6 @@ function RenderFeed(feed) {
     if (projectImg != null && projectImg.trim() != "") {
       description = <Link className={styles['feed__item-readmore-project']} to={edge.node.fields.slug}>
         <img alt={edge.node.frontmatter.title} src={withPrefix(projectImg)} />
-        <div className={styles['link']}>
-          <div className={styles['action']}>See</div>
-        </div>
       </Link>;
     } else {
       description = <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>;
