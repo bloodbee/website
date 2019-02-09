@@ -6,6 +6,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
+  .hidden {
+    display: none;
+  }
 
   p {
     width: 100%;
