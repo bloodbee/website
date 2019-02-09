@@ -3,7 +3,8 @@ import styles from './Contact.module.scss';
 
 const Contact = () => {
   return (
-    <form name="contact" className={styles['contact']} data-netlify="true">
+    <form name="contact" className={styles['contact']} data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact" />
       <p>
         <label>Name</label>
         <input type="text" name="name" />
