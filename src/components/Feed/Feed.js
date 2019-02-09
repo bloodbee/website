@@ -5,16 +5,19 @@ import { withPrefix } from 'gatsby';
 import styles from './Feed.module.scss';
 
 function getListLink(edge) {
-  if (edge.node.frontmatter.template == "post")
+
+  if (edge.node.frontmatter.template === "post")
     return '/posts';
-  else if (edge.node.frontmatter.template == 'project')
+  else if (edge.node.frontmatter.template === 'project')
     return '/projects';
-  else return '#';
+  return '#';
+
 }
 
 function RenderFeed(feed) {
+
   const edge = feed.edge;
-  if (edge.node.frontmatter.template == "post") {
+  if (edge.node.frontmatter.template === "post") {
 
     // render
     return (
@@ -43,12 +46,13 @@ function RenderFeed(feed) {
         <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>Read</Link>
       </div>
     );
-  } else if (edge.node.frontmatter.template == 'project') {
+
+  } else if (edge.node.frontmatter.template === 'project') {
 
     // component image
     let projectImg = edge.node.frontmatter.image1;
     let description = "";
-    if (projectImg != null && projectImg.trim() != "") {
+    if (projectImg !== null && projectImg.trim() !== "") {
       description = <Link className={styles['feed__item-readmore-project']} to={edge.node.fields.slug}>
         <img alt={edge.node.frontmatter.title} src={withPrefix(projectImg)} />
       </Link>;
@@ -82,7 +86,9 @@ function RenderFeed(feed) {
         {description}
       </div>
     );
+
   }
+
 }
 
 const Feed = ({ edges }) => (

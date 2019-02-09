@@ -4,7 +4,7 @@ import Contact from './Contact';
 
 describe('Contact', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Contact {...props} />).toJSON();
+    const tree = renderer.create(<Contact />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

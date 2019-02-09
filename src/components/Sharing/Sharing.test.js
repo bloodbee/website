@@ -4,7 +4,7 @@ import Sharing from './Sharing';
 
 describe('Sharing', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Sharing {...props} />).toJSON();
+    const tree = renderer.create(<Sharing />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

@@ -29,7 +29,7 @@ For this project, we were three from [Pykto](http://pykto.fr) working on it. (On
 
 Finally, the frontend dev left the project because of personal problems. But the design was done at 90%, so it wasn't too difficult to finish it.
 
-The project include many features such as : 
+The project include many features such as :
 
 * A booking system where you decide a pick up point and a drop point, maybe some additionals steps, a date, a type a vehicule, and some options such as a baby-seat for your kid, etc.
 
