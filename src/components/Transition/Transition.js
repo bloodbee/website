@@ -3,7 +3,7 @@ import React from 'react';
 import {
   TransitionGroup,
   Transition as ReactTransition,
-} from "react-transition-group";
+} from 'react-transition-group';
 
 const timeout = 5000;
 const getTransitionStyles = {
@@ -43,7 +43,7 @@ class Transition extends React.PureComponent {
           )}
         </ReactTransition>
       </TransitionGroup>
-    )
+    );
   }
 }
 

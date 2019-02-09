@@ -12,7 +12,7 @@ import styles from './Project.module.scss';
 
 const siteConfig = require('../../../config.js');
 
-const Project = ({ project, url}) => {
+const Project = ({ project, url }) => {
   const {
     customer,
     website,

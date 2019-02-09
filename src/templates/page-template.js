@@ -30,9 +30,7 @@ const PageTemplate = ({ data }) => {
         </Page>
       </Layout>
     );
-
   } else {
-
     return (
       <Layout title={`${siteTitle} | ${pageTitle}`} description={metaDescription}>
         <Sidebar />

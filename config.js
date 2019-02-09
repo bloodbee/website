@@ -17,14 +17,14 @@ module.exports = {
       label: 'Projects',
       path: '/projects'
     },
-    /*{
+    /* {
       label: 'Articles',
       path: '/posts'
     },
     {
       label: 'CV',
       path: '/media/CVENG.pdf'
-    },*/
+    }, */
     {
       label: 'Contact',
       path: '/contact'
