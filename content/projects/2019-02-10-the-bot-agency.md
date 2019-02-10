@@ -41,6 +41,6 @@ So I created The Bot Agency, and started to make few chatbots that you can find 
 * MapBot
 * Domainot
 
-I looked after few tools to help me in this processus, using [Chatfuel](https://chatfuel.com), Botanalytics, or directly from scratch with NodeJS + Heroku.
+I looked after few tools to help me in this processus, using [Chatfuel](https://chatfuel.com), [Botanalytics](https://botanalytics.co), or directly from scratch with NodeJS + [Heroku](https://heroku.com).
 
-For the last month 'january 2019), SearchBot has got 100 new users, 400 conversations and 700 messages. That's not awesome, but it keeps going up everyday since the launch in september 2017.
+For the last month (january 2019), SearchBot has got 100 new users, 400 conversations and 700 messages. That's not awesome, but it keeps going up everyday since the launch in september 2017.
