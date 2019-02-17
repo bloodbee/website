@@ -5,7 +5,7 @@ slug: hire-private-car-with-driver-from-airport-to-hotel
 customer: Navette Facile
 website: 'http://navettefacile.com/'
 month: February
-year: 2018-02-28T07:15:34.375Z
+year: '2018'
 draft: false
 date: 2019-01-31T17:30:00.000Z
 description: Easily hire a car with driver to take you from the airport to your hotel.

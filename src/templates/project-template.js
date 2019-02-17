@@ -49,6 +49,7 @@ export const query = graphql`
         customer
         month
         year
+        website
       }
     }
   }

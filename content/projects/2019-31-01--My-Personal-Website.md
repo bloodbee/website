@@ -40,7 +40,8 @@ I choose [gastby-starter-lumen](https://www.gatsbyjs.org/starters/alxshelepenok/
 This starter comes with a plethora of possibilities like: Blog features, Pagination, Netlify CMS, Disqus, linting, Jest testing, SASS for the css, PostCSS, and many others.
 Really helpful to start developing quickly and really focus on the content/important features!
 
-What about the hosting? I discovered [Netlify](https://www.netlify.com/) with this starter, and it's really amazing to deploy and host web project directly from github without using a VPS or cloud provider like GCP or AWS. This type of service is really helpful if you don't like to spend many hours on devOps. And the best? It's **FREE**.
+## What about the hosting?
+I discovered [Netlify](https://www.netlify.com/) with this starter, and it's really amazing to deploy and host web project directly from github without using a VPS or cloud provider like GCP or AWS. This type of service is really helpful if you don't like to spend many hours on devOps. And the best? It's **FREE**.
 
 That's pretty much anything about this first published project.
 Feel free to ask questions in the comments below and I hope you will find some interesting things in my space.
