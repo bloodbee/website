@@ -12,15 +12,15 @@ const Contact = () => (
     </p>
     <p>
       <label>Name</label>
-      <input type="text" name="name" />
+      <input type="text" name="name" required />
     </p>
     <p>
       <label>Email</label>
-      <input type="email" name="email" />
+      <input type="email" name="email" required />
     </p>
     <p>
       <label>Your message</label>
-      <textarea name="message"></textarea>
+      <textarea name="message" required></textarea>
     </p>
     <p>
       <button type="submit">Send</button>
