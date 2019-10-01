@@ -6,7 +6,8 @@ import Post from '../components/Post';
 const PostTemplate = ({ data }) => {
   const {
     title: siteTitle,
-    subtitle: siteSubtitle
+    subtitle: siteSubtitle,
+    url: url
   } = data.site.siteMetadata;
 
   const {
@@ -18,7 +19,7 @@ const PostTemplate = ({ data }) => {
 
   return (
     <Layout title={`${postTitle} | ${siteTitle}`} description={metaDescription}>
-      <Post post={data.markdownRemark} />
+      <Post post={data.markdownRemark} url={url}/>
     </Layout>
   );
 };
@@ -50,6 +51,8 @@ export const query = graphql`
         tags
         title
         template
+        slug
+        image1
       }
     }
   }

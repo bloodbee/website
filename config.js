@@ -17,11 +17,11 @@ module.exports = {
       label: 'Projects',
       path: '/projects'
     },
-    /* {
-      label: 'Articles',
+    {
+      label: 'Blog',
       path: '/posts'
     },
-    {
+    /*{
       label: 'CV',
       path: '/media/CVENG.pdf'
     }, */
@@ -33,7 +33,7 @@ module.exports = {
   author: {
     name: 'Mathieu "Bloodbee" Dufour',
     photo: '/photo.jpg',
-    bio: 'Web developer, freelancer, entrepreneur. Also cryptocurrencies, chatbots, blockchain enthusiast. I started learning IT around 13 years old and I never stopped.',
+    bio: 'Student in Professional Master Degree @ Epitech, web developer, freelancer and entreprener. Also artificial intelligence, big data and blockchain enthusiast. I started learning IT around 13 years old and I never stopped.',
     contacts: {
       email: 'mathieu_dufour@hotmail.fr',
       github: 'bloodbee',

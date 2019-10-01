@@ -65,6 +65,7 @@ export const query = graphql`
             category
             description
             template
+            image1
           }
         }
       }
