@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://bloodbee.space',
+  url: `https://bloodbee.space`,
   title: 'Bloodbee - Web developer, freelancer, entrepreneur',
   subtitle: 'Web developer, freelancer, entrepreneur. Also cryptocurrencies, chatbots, blockchain enthusiast, websites and online projects creator',
   copyright: '© All rights reserved.',
