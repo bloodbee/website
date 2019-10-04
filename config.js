@@ -3,7 +3,7 @@
 module.exports = {
   url: `https://bloodbee.space`,
   title: 'Bloodbee - Machine learning and web developer',
-  subtitle: 'Student in Professional Master Degree @ Epitech, machine learning and web developer, freelancer and entreprener. Also artificial intelligence, big data and blockchain enthusiast.',
+  subtitle: 'Student in Professional Master Degree @ Epitech, machine learning and web developer.',
   copyright: '© All rights reserved.',
   disqusShortname: 'bloodbeespace',
   limitPerPage: 4,
