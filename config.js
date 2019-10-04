@@ -2,8 +2,8 @@
 
 module.exports = {
   url: `https://bloodbee.space`,
-  title: 'Bloodbee - Web developer, freelancer, entrepreneur',
-  subtitle: 'Web developer, freelancer, entrepreneur. Also cryptocurrencies, chatbots, blockchain enthusiast, websites and online projects creator',
+  title: 'Bloodbee - Student in Professional Master Degree @ Epitech - Machine learning and web developer',
+  subtitle: 'My space, my playground, my projects and whatever I like.',
   copyright: '© All rights reserved.',
   disqusShortname: 'bloodbeespace',
   limitPerPage: 4,
@@ -32,8 +32,8 @@ module.exports = {
   ],
   author: {
     name: 'Mathieu "Bloodbee" Dufour',
-    photo: '/photo.jpg',
-    bio: 'Student in Professional Master Degree @ Epitech, web developer, freelancer and entreprener. Also artificial intelligence, big data and blockchain enthusiast. I started learning IT around 13 years old and I never stopped.',
+    photo: '/avatars.png',
+    bio: 'Student in Professional Master Degree @ Epitech, machine learning and web developer, freelancer and entreprener. Also artificial intelligence, big data and blockchain enthusiast. I started learning IT around 13 years old and I never stopped.',
     contacts: {
       email: 'mathieu_dufour@hotmail.fr',
       github: 'bloodbee',
