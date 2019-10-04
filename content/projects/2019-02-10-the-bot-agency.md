@@ -1,7 +1,7 @@
 ---
 template: project
 title: The Bot Agency
-slug: web-agency-specialized-in-chatbot-creation--the-bot-agency
+slug: "/projects/web-agency-specialized-in-chatbot-creation--the-bot-agency"
 customer: Myself
 website: "https://thebotagency.xyz"
 month: September

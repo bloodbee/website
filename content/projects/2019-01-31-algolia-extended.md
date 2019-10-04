@@ -1,7 +1,7 @@
 ---
 template: project
 title: Algolia Extended
-slug: /projects/use-awesome-functionnalities-for-your-multiple-environment-algolia
+slug: "/projects/use-awesome-functionnalities-for-your-multiple-environment-algolia"
 customer: Myself
 website: 'https://www.algoliaextended.com/'
 git: 'https://github.com/bloodbee/algoliaextended'

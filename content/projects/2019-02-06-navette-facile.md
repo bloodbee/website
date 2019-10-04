@@ -1,7 +1,7 @@
 ---
 template: project
 title: Navette Facile
-slug: hire-private-car-with-driver-from-airport-to-hotel
+slug: "/projects/hire-private-car-with-driver-from-airport-to-hotel"
 customer: Navette Facile
 website: 'http://navettefacile.com/'
 month: February

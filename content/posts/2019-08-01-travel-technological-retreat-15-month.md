@@ -1,7 +1,7 @@
 ---
 template: post
 title: Travel and 15-month technological retreat
-slug: travel-technological-retreat-15-month
+slug: "/blog/travel-technological-retreat-15-month"
 draft: false
 date: 2019-08-01T07:00:00.164Z
 description: Feedback on a 15-month trip that turned into a technological retreat

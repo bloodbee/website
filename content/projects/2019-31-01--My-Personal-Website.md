@@ -3,7 +3,7 @@ title: My Personal Website
 date: "2019-01-31"
 template: "project"
 draft: false
-slug: "/projects/my-personal-website/"
+slug: "/projects/my-personal-website"
 category: "Web development"
 tags:
   - "ReactJS"
