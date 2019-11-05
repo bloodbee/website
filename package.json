@@ -38,11 +38,11 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.13",
     "@fortawesome/free-solid-svg-icons": "^5.7.0",
-    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@fortawesome/react-fontawesome": "^0.1.7",
     "bluebird": "^3.7.0",
     "classnames": "^2.2.6",
     "codecov": "^3.6.1",
-    "disqus-react": "^1.0.5",
+    "disqus-react": "^1.0.7",
     "gatsby": "^2.15.9",
     "gatsby-image": "^2.0.28",
     "gatsby-link": "^2.0.8",
@@ -108,6 +108,6 @@
     "rimraf": "^2.7.1",
     "stylelint": "^9.10.1",
     "stylelint-config-recommended-scss": "^3.3.0",
-    "stylelint-scss": "^3.5.1"
+    "stylelint-scss": "^3.12.1"
   }
 }
