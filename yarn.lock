@@ -6231,11 +6231,12 @@ gatsby-cli@^2.8.8:
     ink "^2.5.0"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.12, gatsby-core-utils@^1.0.17, gatsby-core-utils@^1.0.19:
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.19.tgz#670a0eefe8fc8517c5b87573be6cd817d4b1a96a"
+gatsby-core-utils@^1.0.12, gatsby-core-utils@^1.0.17, gatsby-core-utils@^1.0.19, gatsby-core-utils@^1.0.22:
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.0.22.tgz#e246c85db5223906f67251ebb0e4e2e4965d66d7"
   dependencies:
     ci-info "2.0.0"
+    node-object-hash "^2.0.0"
 
 gatsby-graphiql-explorer@^0.2.26:
   version "0.2.26"
@@ -6529,13 +6530,13 @@ gatsby-telemetry@^1.1.35:
     stack-utils "1.0.2"
     uuid "3.3.3"
 
-gatsby-transformer-remark@^2.6.36:
-  version "2.6.36"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.6.36.tgz#619f6dd8b36b4c064ae39be7771220d8648af173"
+gatsby-transformer-remark@^2.6.39:
+  version "2.6.39"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.6.39.tgz#37d65a1e4c0ca6105db31eeb9fec9ce9e4ced13a"
   dependencies:
-    "@babel/runtime" "^7.7.2"
+    "@babel/runtime" "^7.7.4"
     bluebird "^3.7.1"
-    gatsby-core-utils "^1.0.19"
+    gatsby-core-utils "^1.0.22"
     gray-matter "^4.0.2"
     hast-util-raw "^4.0.0"
     hast-util-to-html "^4.0.1"
@@ -10812,6 +10813,10 @@ node-notifier@^5.4.3:
     semver "^5.5.0"
     shellwords "^0.1.1"
     which "^1.3.0"
+
+node-object-hash@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/node-object-hash/-/node-object-hash-2.0.0.tgz#9971fcdb7d254f05016bd9ccf508352bee11116b"
 
 node-polyglot@^2.3.0:
   version "2.3.0"
