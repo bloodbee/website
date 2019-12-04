@@ -44,7 +44,7 @@
     "codecov": "^3.6.1",
     "disqus-react": "^1.0.5",
     "gatsby": "^2.17.8",
-    "gatsby-image": "^2.0.28",
+    "gatsby-image": "^2.2.34",
     "gatsby-link": "^2.0.8",
     "gatsby-plugin-catch-links": "^2.0.9",
     "gatsby-plugin-feed": "^2.3.19",
