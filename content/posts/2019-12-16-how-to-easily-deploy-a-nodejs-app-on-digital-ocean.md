@@ -1,11 +1,11 @@
 ---
 template: post
 title: How to easily deploy a nodejs app on Digital Ocean
-slug: how-to-deploy-nodejs-digital-ocean
-draft: true
+slug: "/blog/how-to-deploy-nodejs-digital-ocean"
+draft: false
 date: 2019-12-16T09:44:51.027Z
 description: How to deploy a nodejs app on Digital Ocean in 10 mins with a basic script.
-category: deployment
+category: "Cloud"
 tags:
   - devops
   - deployment
@@ -36,41 +36,31 @@ Now generate the app
 
 `$ express myapp`
 
-`You can see all the options with this command`
+You can see all the options with this command
 
-`$ express -h`
-
-`Usage: express [options][dir]`
-
-`Options:`
-
-`    -h, --help          output usage information`
-
-`        --version       output the version number`
-
-`    -e, --ejs           add ejs engine support`
-
-`        --hbs           add handlebars engine support`
-
-`        --pug           add pug engine support`
-
-`    -H, --hogan         add hogan.js engine support`
-
-`        --no-view       generate without view engine`
-
-`    -v, --view <engine> add view <engine> support (ejs|hbs|hjs|jade|pug|twig|vash) (defaults to jade)`
-
-`    -c, --css <engine>  add stylesheet <engine> support (less|stylus|compass|sass) (defaults to plain css)`
-
-`        --git           add .gitignore`
-
-`    -f, --force         force on non-empty directory`
+```
+$ express -h
+Usage: express [options][dir]
+Options:
+    -h, --help          output usage information
+        --version       output the version number
+    -e, --ejs           add ejs engine support
+        --hbs           add handlebars engine support
+        --pug           add pug engine support
+    -H, --hogan         add hogan.js engine support
+        --no-view       generate without view engine
+    -v, --view <engine> add view <engine> support (ejs|hbs|hjs|jade|pug|twig|vash) (defaults to jade)
+    -c, --css <engine>  add stylesheet <engine> support (less|stylus|compass|sass) (defaults to plain css)
+        --git           add .gitignore
+    -f, --force         force on non-empty directory
+```
 
 Install the dependencies
 
-`$ cd myapp`
-
-`$ npm install`
+```
+$ cd myapp
+$ npm install
+```
 
 You can launch your nodejs app like that and access it at http://localhost:3000
 
