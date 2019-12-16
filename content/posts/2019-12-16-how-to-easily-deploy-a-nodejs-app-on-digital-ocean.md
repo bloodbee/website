@@ -12,7 +12,7 @@ tags:
   - nodejs
   - digital ocean
   - script
-image1: /media/42-line-bible.jpg
+image1: /media/do_logo_vertical_blue.png
 ---
 Hello fellow coders.
 
