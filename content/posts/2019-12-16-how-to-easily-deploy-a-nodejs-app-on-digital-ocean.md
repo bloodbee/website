@@ -96,6 +96,32 @@ On the new form, you just have to fill the project name, the description and sel
 
 On the second step, you can just click on **skip for now**.
 
+## Create the droplet
+
+In your project dashboard, click on **Get Started with a Droplet** button.
+
+I suggest you to choose theses options :
+
+* Ubuntu OS.
+* Standard plan at 5$/mo.
+* A datacenter depending on your region.
+* SSH Keys authentification with your newly added ssh key.
+* In **Select additional options **select** User data**
+
+When you choose User data as an option, Digital Ocean allow to use a cloud script to generate your new droplet.
+
+I created a little script that allow to generate users, manage ssh keys, daemonize your app and other few things. Check it here <https://github.com/bloodbee/cloud-config-scripts-digitalocean/blob/master/webserver/nodejs-app.yml>.
+
+You can just copy/paste the script and replace keywords `<%...%>` with your own value.
+
+For `<%DIGITAL_OCEAN_API_KEY%>`, use a new one generated in **MANAGE** then **API**.
+
+For `<%SSH_PUB_KEY%>`, this is the one you added previously in your account ssh keys.
+
+For `<%REPOSITORY_GIT_TO_USE%>`, its the url of the git repository you use to version your project (It can be github, gitlab, bitbucket or whatever you prefer to use).
+
+When everything seems good, you can click on **Create Droplet** button.
+
 ## Manage your Networking
 
 On your dashboard, click on **MANAGE** and then **Networking**.
@@ -106,4 +132,16 @@ Enter your domain, choose the right project and click on **Add Domain**.
 
 Then you need to update your dns with you domain name registrar. [Check it here](https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars) on how do that.
 
-Personally, I love to use [OVH](https://www.ovh.com/) for my domain names. So in our case We add two new **A records **(myapp.com and www.myapp.com) that will redirect to our newly created droplet.
+Personally, I love to use [OVH](https://www.ovh.com/) for my domain names. So in our case we add two new **A records **(myapp.com and www.myapp.com) that will redirect to our newly created droplet. Don't forget to select the good one!
+
+After all those steps, your web app should be alive on a droplet, and you can access to it directly.
+
+## What's next ?
+
+This guide should take approximately 30mins to be completed. On your next nodejs deployment, it will be quicker because of the already added ssh keys.
+
+From now, you can program your web app, connect by ssh to your droplet, and put together some CI/CD pipelines.
+
+Leave a comment in the disqus area if this guide helped you. :)
+
+See you for an other one.
