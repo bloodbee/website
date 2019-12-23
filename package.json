@@ -52,7 +52,7 @@
     "gatsby-plugin-manifest": "^2.2.28",
     "gatsby-plugin-netlify": "^2.1.27",
     "gatsby-plugin-netlify-cms": "^3.0.18",
-    "gatsby-plugin-offline": "^3.0.26",
+    "gatsby-plugin-offline": "^3.0.30",
     "gatsby-plugin-page-transitions": "^1.0.7",
     "gatsby-plugin-react-helmet": "^3.1.18",
     "gatsby-plugin-robots-txt": "^1.4.0",
