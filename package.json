@@ -69,7 +69,7 @@
     "gatsby-transformer-remark": "^2.6.39",
     "gatsby-transformer-sharp": "^2.3.9",
     "invariant": "^2.2.4",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "moment": "^2.23.0",
     "netlify-cms": "^2.10.10",
     "node-sass": "^4.13.0",
