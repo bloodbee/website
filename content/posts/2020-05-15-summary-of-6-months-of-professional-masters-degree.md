@@ -1,14 +1,19 @@
 ---
 template: post
-title: Summary of 6 months of Professional Master's degree
-slug: summary-6-months-pro-master-degree
+title: Summary of a year in a Professional Master's degree
+slug: summary-1-year-pro-master-degree
 draft: true
 date: 2020-05-15T01:01:22.252Z
-description: SUmmary of 6 months.
+description: >-
+  Summary of one year in the Epitech school, one of the most renoun in France
+  for IT and computer science.
 category: post
 tags:
   - epitech
-  - ''
+  - computer science
+  - IT
+  - learning
+  - school
 image1: /media/movable-type.jpg
 ---
 Good morning, dear readers,
