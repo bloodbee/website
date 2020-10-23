@@ -89,7 +89,7 @@
     "autoprefixer": "^9.7.3",
     "babel-core": "^7.0.0-0",
     "babel-eslint": "^10.0.1",
-    "babel-jest": "^24.9.0",
+    "babel-jest": "^26.6.1",
     "browserslist": "^4.8.0",
     "concurrently": "^5.0.0",
     "eslint": "^5.12.1",
