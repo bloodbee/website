@@ -1,41 +1,25 @@
+// @flow strict
 import React from 'react';
-import Disqus from 'disqus-react';
 import { Link } from 'gatsby';
-import moment from 'moment';
-
-import Content from '../Content';
 import Author from '../Author';
-import Tags from '../Tags';
+import Comments from '../Comments';
+import Content from '../Content';
+import Meta from '../Meta';
 import Sharing from '../Sharing';
-
+import Tags from '../Tags';
 import styles from './Project.module.scss';
+import type { Node } from '../../types';
 
-const siteConfig = require('../../../config.js');
+type Props = {
+  project: Node
+};
 
-const Project = ({ project, url }) => {
-  const {
-    customer,
-    website,
-    month,
-    year,
-    tags,
-    title,
-    date,
-    slug
-  } = project.frontmatter;
-
+const Project = ({ project, url }: Props) => {
   const { html } = project;
-  const { tagSlugs } = project.fields;
-
+  const { tagSlugs, slug } = project.fields;
+  const { customer, website, month, year, tags, title, date } = project.frontmatter;
   const urlProject = url + slug;
   const websiteUrl = website + '?utm_source=bloodbee.space&utm_medium=projects';
-
-  const disqusShortname = siteConfig.disqusShortname;
-  const disqusConfig = {
-      url: urlProject,
-      identifier: project.id,
-      title: title,
-  };
 
   return (
     <div className={styles['project']}>
@@ -59,9 +43,13 @@ const Project = ({ project, url }) => {
         <p className={styles['project__footer-item']}>
           Published {moment(date).format('D MMM YYYY')}
         </p>
-        <Tags tags={tags} tagSlugs={tagSlugs} />
+        <Meta date={date} />
+        {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
         <Author />
-        <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+      </div>
+
+      <div className={styles['project__comments']}>
+        <Comments itemSlug={slug} itemTitle={project.frontmatter.title} />
       </div>
 
     </div>

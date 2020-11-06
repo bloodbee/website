@@ -17,7 +17,8 @@ tags:
   - multiple environment
   - nodejs
   - asyncjs
-image1: /media/algolia-extended-homepage.png
+image1: 
+  - publicUrl: /media/algolia-extended-homepage.png
 ---
 ![Algolia extended homepage](/media/algolia-extended-homepage.png)
 

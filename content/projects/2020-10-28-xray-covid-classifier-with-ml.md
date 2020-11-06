@@ -15,6 +15,7 @@ tags:
   - coronavirus
   - classifier
   - xray
-image1: /media/person1107_virus_1831.jpeg
+image1: 
+  - publicUrl: /media/person1107_virus_1831.jpeg
 ---
 qzdzq

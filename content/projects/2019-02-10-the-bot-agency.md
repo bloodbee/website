@@ -24,7 +24,8 @@ tags:
   - ai
   - machine learning
   - artifical intelligence
-image1: /media/thebotagency-logo.png
+image1: 
+  - publicUrl: /media/thebotagency-logo.png
 ---
 In 2017, I launched [The Bot Agency](https://thebotagency.xyz). A startup specialized in conversational and automatized chatbots.
 

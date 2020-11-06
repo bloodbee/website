@@ -12,7 +12,8 @@ tags:
   - nodejs
   - digital ocean
   - script
-image1: /media/do_logo_vertical_blue.png
+image1: 
+  - publicUrl: /media/do_logo_vertical_blue.png
 ---
 Hello dear fellow developers,
 

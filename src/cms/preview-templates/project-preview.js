@@ -1,6 +1,13 @@
+// @flow strict
 import React from 'react';
+import type { Entry, WidgetFor } from '../../types';
 
-const ProjectPreview = ({ entry, widgetFor }) => {
+type Props = {
+  entry: Entry,
+  widgetFor: WidgetFor
+};
+
+const ProjectPreview = ({ entry, widgetFor }: Props) => {
   const body = widgetFor('body');
   const title = entry.getIn(['data', 'title']);
 

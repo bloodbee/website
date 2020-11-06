@@ -14,8 +14,8 @@ module.exports = async (graphql, actions) => {
     }
   `);
 
-  const { limitPerPage } = siteConfig;
-  const numPages = Math.ceil(result.data.allMarkdownRemark.totalCount / limitPerPage);
+  const { postsPerPage } = siteConfig;
+  const numPages = Math.ceil(result.data.allMarkdownRemark.totalCount / postsPerPage);
 
   for (let i = 0; i < numPages; i += 1) {
     createPage({
@@ -23,8 +23,8 @@ module.exports = async (graphql, actions) => {
       component: path.resolve('./src/templates/posts-list-template.js'),
       context: {
         currentPage: i,
-        limit: limitPerPage,
-        offset: i * limitPerPage,
+        limit: postsPerPage,
+        offset: i * postsPerPage,
         prevPagePath: i <= 1 ? '/posts' : `/posts/${i - 1}`,
         nextPagePath: `/posts/${i + 1}`,
         hasPrevPage: i !== 0,

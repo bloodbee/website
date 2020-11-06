@@ -12,7 +12,8 @@ tags:
   - "GatsbyJS"
   - "Netlify"
 description: "This is the launch of my personal website!"
-image1: "/media/image-2.jpg"
+image1: 
+  - publicUrl: "/media/image-2.jpg"
 website: "https://bloodbee.space"
 customer: "Myself"
 month: "January"

@@ -52,7 +52,6 @@ export const query = graphql`
         title
         template
         slug
-        image1
       }
     }
   }

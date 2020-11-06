@@ -1,24 +1,25 @@
+// @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
-import Contact from '../components/Contact';
 import Page from '../components/Page';
+import Contact from '../components/Contact';
+import { useSiteMetadata } from '../hooks';
+import type { MarkdownRemark } from '../types';
 
-const PageTemplate = ({ data }) => {
-  const {
-    title: siteTitle,
-    subtitle: siteSubtitle
-  } = data.site.siteMetadata;
+type Props = {
+  data: {
+    markdownRemark: MarkdownRemark
+  }
+};
 
-  const {
-    title: pageTitle,
-    description: pageDescription
-  } = data.markdownRemark.frontmatter;
-
+const PageTemplate = ({ data }: Props) => {
+  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
   const { html: pageBody } = data.markdownRemark;
-
-  const metaDescription = pageDescription !== null ? pageDescription : siteSubtitle;
+  const { frontmatter } = data.markdownRemark;
+  const { title: pageTitle, description: pageDescription = '' } = frontmatter;
+  const metaDescription = pageDescription || siteSubtitle;
 
   if (pageTitle == 'Contact') {
     return (
@@ -32,24 +33,19 @@ const PageTemplate = ({ data }) => {
     );
   } else {
     return (
-      <Layout title={`${siteTitle} | ${pageTitle}`} description={metaDescription}>
+      <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription} >
         <Sidebar />
         <Page title={pageTitle}>
           <div dangerouslySetInnerHTML={{ __html: pageBody }} />
         </Page>
       </Layout>
     );
+
   }
 };
 
 export const query = graphql`
   query PageBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        subtitle
-      }
-    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html

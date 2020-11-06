@@ -1,11 +1,12 @@
-/**
+/** 
  * Generic
  */
-html {
+ html {
   font-size: $typographic-root-font-size;
 }
 
 body {
+  margin: 0 0 0 calc(100vw - 100%);
   font-family: $typographic-font-family;
   color: $typographic-base-font-color;
   line-height: $typographic-base-line-height;
@@ -74,10 +75,6 @@ img {
   max-width: 100%;
   display: block;
   margin: inherit auto;
-  /*-webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
-  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);*/
-  border-radius: 5px;
 }
 
 hr {
@@ -111,10 +108,6 @@ strong {
   font-weight: 600;
 }
 
-.italic {
-  color: $color-primary;
-}
-
 ul {
   list-style: square;
   @include margin-bottom(1);
@@ -135,7 +128,6 @@ blockquote {
   padding: 0;
   font-style: italic;
   text-align: center;
-  color: $color-secondary;
 }
 
 figure {
@@ -152,6 +144,11 @@ figcaption {
   font-style: italic;
   margin-bottom: 0;
   text-align: center;
+}
+
+.anchor {
+  margin-left: -30px !important;
+  padding-right: 14px !important;
 }
 
 @include breakpoint-sm {

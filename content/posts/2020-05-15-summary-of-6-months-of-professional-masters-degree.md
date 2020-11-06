@@ -14,7 +14,8 @@ tags:
   - IT
   - learning
   - school
-image1: /media/movable-type.jpg
+image1: 
+  - publicUrl: /media/movable-type.jpg
 ---
 Good morning, dear readers,
 

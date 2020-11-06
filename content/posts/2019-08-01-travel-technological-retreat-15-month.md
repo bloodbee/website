@@ -6,7 +6,8 @@ draft: false
 date: 2019-08-01T07:00:00.164Z
 description: Feedback on a 15-month trip that turned into a technological retreat
 category: "Travel"
-image1: "/media/mantas-hesthaven-_g1wdckcv3w-unsplash.jpg"
+image1: 
+  - publicUrl: "/media/mantas-hesthaven-_g1wdckcv3w-unsplash.jpg"
 tags:
   - travel
   - experience

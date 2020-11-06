@@ -19,7 +19,8 @@ tags:
   - B2B
   - B2C
   - from scratch
-image1: /media/capture-d’écran-42-.png
+image1: 
+  - publicUrl: /media/capture-d’écran-42-.png
 ---
 I first met the owner of navettefacile.com back in 2016 when I was working for YHAPPS (your health applications). There was a close friendship between the founder of this startup and this person who would become one of my clients for more than a year.
 

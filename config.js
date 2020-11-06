@@ -8,6 +8,7 @@ module.exports = {
   disqusShortname: 'bloodbeespace',
   limitPerPage: 4,
   googleAnalyticsId: 'UA-58659241-1',
+  useKatex: false,
   menu: [
     {
       label: 'Home',
