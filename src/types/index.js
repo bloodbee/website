@@ -32,14 +32,16 @@ export type Node = {
     date: string,
     description?: string,
     category?: string,
+    customer?: string,
+    dateCreation?: string,
+    website?: string,
     tags?: string[],
     title: string,
-    image1?: {
-      publicUrl: string
-    }
-  },
-  html: string,
-  id: string
+    socialImage?: {
+      publicURL: string
+    },
+    template: string
+  }
 };
 
 export type Edge = {

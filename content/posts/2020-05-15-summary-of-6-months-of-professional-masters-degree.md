@@ -1,9 +1,9 @@
 ---
 template: post
 title: Summary of a year in a Professional Master's degree
-slug: summary-1-year-pro-master-degree
+slug: "/summary-1-year-pro-master-degree"
 draft: true
-date: 2020-05-15T01:01:22.252Z
+date: "2020-05-15T01:01:22.252Z"
 description: >-
   Summary of one year in the Epitech school, one of the most renoun in France
   for IT and computer science.
@@ -14,8 +14,7 @@ tags:
   - IT
   - learning
   - school
-image1: 
-  - publicUrl: /media/movable-type.jpg
+socialImage: /media/movable-type.jpg
 ---
 Good morning, dear readers,
 

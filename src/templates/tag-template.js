@@ -46,7 +46,7 @@ const TagTemplate = ({ data, pageContext }: Props) => {
 };
 
 export const query = graphql`
-  query TagPage($tag: String, $limit: Int!, $offset: Int!) {
+  query TagPage($tag: String, $postsLimit: Int!, $postsOffset: Int!) {
     site {
       siteMetadata {
         title
@@ -54,9 +54,9 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-        limit: $limit,
-        skip: $offset,
-        filter: { frontmatter: { tags: { in: [$tag] }, template: { in: ["post", "project"] }, draft: { ne: true } } },
+        limit: $postsLimit,
+        skip: $postsOffset,
+        filter: { frontmatter: { tags: { in: [$tag] }, template: { eq: "post" }, draft: { ne: true } } },
         sort: { order: DESC, fields: [frontmatter___date] }
       ){
       edges {
@@ -70,7 +70,6 @@ export const query = graphql`
             date
             category
             description
-            template
           }
         }
       }

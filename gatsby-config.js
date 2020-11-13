@@ -73,7 +73,7 @@ module.exports = {
                 allMarkdownRemark(
                   limit: 1000,
                   sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }
+                  filter: { frontmatter: { template: { in: ["post", "project"] }, draft: { ne: true } } }
                 ) {
                   edges {
                     node {
@@ -113,7 +113,7 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 960,
-              withWebp: true
+              withWebp: true,
             }
           },
           {
@@ -186,16 +186,8 @@ module.exports = {
         background_color: '#FFF',
         theme_color: '#F7A046',
         display: 'standalone',
-        icon: 'static/photo.jpg'
+        icon: 'static/avatars.png'
       },
-    },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://bloodbee.space',
-        sitemap: 'https://bloodbee.space/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
@@ -203,7 +195,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        // postCssPlugins: [...postCssPlugins],
+        postCssPlugins: [...postCssPlugins],
         cssLoaderOptions: {
           camelCase: false,
         }

@@ -3,7 +3,7 @@ template: post
 title: How to easily deploy a nodejs app on Digital Ocean
 slug: "/blog/how-to-deploy-nodejs-digital-ocean"
 draft: false
-date: 2019-12-16T09:44:51.027Z
+date: "2019-12-16T09:44:51.027Z"
 description: How to deploy a nodejs app on Digital Ocean in 10 mins with a basic script.
 category: "Cloud"
 tags:
@@ -12,8 +12,7 @@ tags:
   - nodejs
   - digital ocean
   - script
-image1: 
-  - publicUrl: /media/do_logo_vertical_blue.png
+socialImage: /media/do_logo_vertical_blue.png
 ---
 Hello dear fellow developers,
 
@@ -75,7 +74,7 @@ On your dashboard, in the left menu click on **ACCOUNT** and then **Security.**
 
 Then click on **Add SSH Key** and follow the tutorial.
 
-![Personal account on Digital Ocean](/media/capture-d’écran-2019-12-16-à-13.43.05.png "Personal account on Digital Ocean")
+![Personal account on Digital Ocean](/media/digital-ocean-security.png "Personal account on Digital Ocean")
 
 ## Create the project
 
@@ -83,7 +82,7 @@ On your dashboard, click on **+ New Project** in the left menu.
 
 On the new form, you just have to fill the project name, the description and select a purpose.
 
-![Form for project creation on digital ocean - first step](/media/capture-d’écran-2019-12-16-à-13.36.02.png "Form for project creation on digital ocean - first step")
+![Form for project creation on digital ocean - first step](/media/digital-ocean-create.png "Form for project creation on digital ocean - first step")
 
 On the second step, you can just click on **skip for now**.
 
@@ -119,7 +118,7 @@ On your dashboard, click on **MANAGE** and then **Networking**.
 
 Enter your domain, choose the right project and click on **Add Domain**.
 
-![Add a new domain on Digital Ocean](/media/capture-d’écran-2019-12-16-à-13.50.29.png "Add a new domain on Digital Ocean")
+![Add a new domain on Digital Ocean](/media/digital-ocean-network.png "Add a new domain on Digital Ocean")
 
 Then you need to update your dns with you domain name registrar. [Check it here](https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars) on how do that.
 

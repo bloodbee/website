@@ -12,12 +12,10 @@ tags:
   - "GatsbyJS"
   - "Netlify"
 description: "This is the launch of my personal website!"
-image1: 
-  - publicUrl: "/media/image-2.jpg"
+socialImage: "/media/image-2.jpg"
 website: "https://bloodbee.space"
 customer: "Myself"
-month: "January"
-year: "2019"
+dateCreation: "2019-01-01T00:00:00.000Z"
 ---
 
 **This is the first project that I publish in my space**

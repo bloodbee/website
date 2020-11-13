@@ -3,7 +3,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { useStaticQuery, StaticQuery } from 'gatsby';
 import Comments from './Comments';
-import siteMetadata from '../../../../jest/__fixtures__/site-metadata';
+import siteMetadata from '../../../jest/__fixtures__/site-metadata';
 import type { RenderCallback } from '../../../types';
 
 describe('Comments', () => {
@@ -17,8 +17,8 @@ describe('Comments', () => {
   });
 
   const props = {
-    postTitle: 'test',
-    postSlug: '/test'
+    title: 'test',
+    slug: '/test'
   };
 
   it('renders correctly', () => {

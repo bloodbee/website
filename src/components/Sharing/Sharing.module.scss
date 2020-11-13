@@ -11,7 +11,10 @@
   border: 1px solid #e6e6e6;
   border-radius: 1.25rem;
   margin-top: 10px;
-  width: 100%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 350px;
 
   .resp-sharing-button__link,
   .resp-sharing-button__icon {
@@ -176,6 +179,7 @@
     position: fixed;
     left: 30px;
     flex-direction: column;
-    width: 7.625rem;
+    width: 8.650rem;
+    min-width: unset;
   }
 }

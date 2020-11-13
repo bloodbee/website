@@ -17,7 +17,7 @@ describe('Project', () => {
   });
 
   const props = {
-    post: {
+    project: {
       id: 'test-123',
       html: '<p>test</p>',
       fields: {

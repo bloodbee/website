@@ -5,20 +5,18 @@ slug: "/projects/use-awesome-functionnalities-for-your-multiple-environment-algo
 customer: Myself
 website: 'https://www.algoliaextended.com/'
 git: 'https://github.com/bloodbee/algoliaextended'
-month: October
-year: '2017'
 draft: false
-date: 2019-02-05T06:43:49.334Z
+date: "2019-02-05T06:43:49.334Z"
+dateCreation: "2017-10-01T00:00:00.000Z"
 description: Use awesome functionnalities for your multiple environment algolia.
-category: Web development
+category: "Web development"
 tags:
   - algolia
   - side project
   - multiple environment
   - nodejs
   - asyncjs
-image1: 
-  - publicUrl: /media/algolia-extended-homepage.png
+socialImage: "/media/algolia-extended-homepage.png"
 ---
 ![Algolia extended homepage](/media/algolia-extended-homepage.png)
 

@@ -1,7 +1,7 @@
 /** 
  * Generic
  */
- html {
+html {
   font-size: $typographic-root-font-size;
 }
 
@@ -166,4 +166,8 @@ figcaption {
     float: left;
   }
 
+}
+
+blockquote {
+  color: $color-secondary;
 }

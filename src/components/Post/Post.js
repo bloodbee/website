@@ -6,24 +6,27 @@ import Comments from '../Comments';
 import Content from '../Content';
 import Meta from '../Meta';
 import Tags from '../Tags';
+import Sharing from '../Sharing';
 import styles from './Post.module.scss';
 import type { Node } from '../../types';
+import { useSiteMetadata } from '../../hooks';
 
 type Props = {
   post: Node
 };
 
-const Post = ({ post, url }: Props) => {
+const Post = ({ post }: Props) => {
+  const { url } = useSiteMetadata();
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
   const { tags, title, date } = post.frontmatter;
-  const urlProject = url + slug;
-  const websiteUrl = website + '?utm_source=bloodbee.space&utm_medium=projects';
+
+  const sharingUrl = url + slug;
 
   return (
     <div className={styles['post']}>
-      <Link className={styles['post__home-button']} to="/">All Posts</Link>
-      <Sharing url={urlProject} text={title}/>
+      <Link className={styles['post__home-button']} to="/posts">All Posts</Link>
+      <Sharing url={sharingUrl} text={title}/>
 
       <div className={styles['post__content']}>
         <Content body={html} title={title} />
@@ -36,7 +39,7 @@ const Post = ({ post, url }: Props) => {
       </div>
 
       <div className={styles['post__comments']}>
-        <Comments itemSlug={slug} itemTitle={post.frontmatter.title} />
+        <Comments slug={slug} title={post.frontmatter.title} />
       </div>
     </div>
   );

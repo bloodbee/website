@@ -1,54 +1,56 @@
+// @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Project from '../components/Project';
+import { useSiteMetadata } from '../hooks';
+import type { MarkdownRemark } from '../types';
 
-const ProjectTemplate = ({ data }) => {
-  const {
-    title: siteTitle,
-    subtitle: siteSubtitle,
-    url: url
-  } = data.site.siteMetadata;
+type Props = {
+  data: {
+    markdownRemark: MarkdownRemark
+  }
+};
 
-  const {
-    title: projectTitle,
-    description: projectDescription
-  } = data.markdownRemark.frontmatter;
+const ProjectTemplate = ({ data }: Props) => {
+  console.log(data);
 
-  const metaDescription = projectDescription !== null ? projectDescription : siteSubtitle;
+  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
+  const { frontmatter } = data.markdownRemark;
+  const { title: projectTitle, description: projectDescription = '', socialImage } = frontmatter;
+  const metaDescription = projectDescription || siteSubtitle;
+  const socialImageUrl = socialImage?.publicURL;
+
   return (
-    <Layout title={`${projectTitle} | ${siteTitle}`} description={metaDescription}>
-      <Project project={data.markdownRemark} url={url}/>
+    <Layout title={`${projectTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
+      <Project project={data.markdownRemark} />
     </Layout>
   );
 };
 
 export const query = graphql`
   query ProjectBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        subtitle
-        title
-        url
-      }
-    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
       fields {
+        slug
+        categorySlug
         tagSlugs
       }
       frontmatter {
         date
+        dateCreation
         description
         tags
         title
         template
-        slug
         customer
-        month
-        year
         website
+        category
+        socialImage {
+          publicURL
+        }
       }
     }
   }

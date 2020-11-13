@@ -4,11 +4,11 @@ import ReactDisqusComments from 'react-disqus-comments';
 import { useSiteMetadata } from '../../hooks';
 
 type Props = {
-  itemTitle: string,
-  itemSlug: string
+  title: string,
+  slug: string
 };
 
-const Comments = ({ itemTitle, itemSlug }: Props) => {
+const Comments = ({ title, slug }: Props) => {
   const { url, disqusShortname } = useSiteMetadata();
 
   if (!disqusShortname) {
@@ -18,9 +18,9 @@ const Comments = ({ itemTitle, itemSlug }: Props) => {
   return (
     <ReactDisqusComments
       shortname={disqusShortname}
-      identifier={itemTitle}
-      title={itemTitle}
-      url={url + itemSlug}
+      identifier={title}
+      title={title}
+      url={url + slug}
     />
   );
 };
