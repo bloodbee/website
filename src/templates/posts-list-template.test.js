@@ -1,29 +1,60 @@
-// @flow strict
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { useStaticQuery, StaticQuery } from 'gatsby';
 import PostsListTemplate from './posts-list-template';
-import siteMetadata from '../../jest/__fixtures__/site-metadata';
-import allMarkdownRemark from '../../jest/__fixtures__/all-markdown-remark';
-import type { RenderCallback } from '../types';
 
 describe('PostsListTemplate', () => {
   const props = {
-    ...siteMetadata,
-    ...allMarkdownRemark
+    data: {
+      allMarkdownRemark: {
+        edges: [
+          {
+            node: {
+              fields: {
+                slug: '/test_0',
+                categorySlug: '/test_0'
+              },
+              frontmatter: {
+                date: '2016-09-01',
+                description: 'test_0',
+                category: 'test_0',
+                title: 'test_0'
+              }
+            }
+          },
+          {
+            node: {
+              fields: {
+                slug: '/test_1',
+                categorySlug: '/test_1'
+              },
+              frontmatter: {
+                date: '2016-09-01',
+                description: 'test_1',
+                category: 'test_1',
+                title: 'test_1'
+              }
+            }
+          }
+        ]
+      },
+      site: {
+        siteMetadata: {
+          title: 'test',
+          subtitle: 'test'
+        }
+      }
+    },
+    pageContext: {
+      currentPage: 1,
+      prevPagePath: '/page/1',
+      nextPagePath: '/page/3',
+      hasNextPage: true,
+      hasPrevPage: true
+    }
   };
 
-  beforeEach(() => {
-    StaticQuery.mockImplementationOnce(
-      ({ render }: RenderCallback) => (
-        render(props)
-      ),
-      useStaticQuery.mockReturnValue(props)
-    );
-  });
-
   it('renders correctly', () => {
-    const tree = renderer.create(<PostsListTemplate />).toJSON();
+    const tree = renderer.create(<PostsListTemplate {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

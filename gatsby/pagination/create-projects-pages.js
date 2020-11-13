@@ -14,21 +14,21 @@ module.exports = async (graphql, actions) => {
     }
   `);
 
-  const { postsPerPage } = siteConfig;
-  const numPages = Math.ceil(result.data.allMarkdownRemark.totalCount / postsPerPage);
+  const { limitPerPage } = siteConfig;
+  const numProjects = Math.ceil(result.data.allMarkdownRemark.totalCount / limitPerPage);
 
-  for (let i = 0; i < numPages; i += 1) {
+  for (let i = 0; i < numProjects; i += 1) {
     createPage({
       path: i === 0 ? '/projects' : `/projects/${i}`,
       component: path.resolve('./src/templates/projects-list-template.js'),
       context: {
         currentPage: i,
-        postsLimit: postsPerPage,
-        postsOffset: i * postsPerPage,
+        limit: limitPerPage,
+        offset: i * limitPerPage,
         prevPagePath: i <= 1 ? '/projects' : `/projects/${i - 1}`,
         nextPagePath: `/projects/${i + 1}`,
         hasPrevPage: i !== 0,
-        hasNextPage: i !== numPages - 1
+        hasNextPage: i !== numProjects - 1
       }
     });
   }

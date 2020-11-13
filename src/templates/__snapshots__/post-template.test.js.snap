@@ -7,12 +7,12 @@ exports[`PostTemplate renders correctly 1`] = `
   <div
     className="post"
   >
-    <a
+    <Link
       className="post__home-button"
-      href="/"
+      to="/"
     >
       All Articles
-    </a>
+    </Link>
     <div
       className="post__content"
     >
@@ -44,7 +44,7 @@ exports[`PostTemplate renders correctly 1`] = `
           className="meta__date"
         >
           Published 
-          Sep 1, 2016
+          1 Sep 2016
         </p>
       </div>
       <div
@@ -56,49 +56,36 @@ exports[`PostTemplate renders correctly 1`] = `
           <li
             className="tags__list-item"
           >
-            <a
+            <Link
               className="tags__list-item-link"
-              href="/test_0"
+              to="/test_0"
             >
               test_0
-            </a>
+            </Link>
           </li>
           <li
             className="tags__list-item"
           >
-            <a
+            <Link
               className="tags__list-item-link"
-              href="/test_1"
+              to="/test_1"
             >
               test_1
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
-      <div
-        className="author"
-      >
-        <p
-          className="author__bio"
-        >
-          Test bio
-          <a
-            className="author__bio-twitter"
-            href="https://www.twitter.com/#"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <strong>
-              Test name
-            </strong>
-             on Twitter
-          </a>
-        </p>
-      </div>
+      <StaticQuery
+        render={[Function]}
+      />
     </div>
     <div
       className="post__comments"
-    />
+    >
+      <StaticQuery
+        render={[Function]}
+      />
+    </div>
   </div>
 </div>
 `;

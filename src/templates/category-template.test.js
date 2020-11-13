@@ -1,29 +1,72 @@
-// @flow strict
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { useStaticQuery, StaticQuery } from 'gatsby';
 import CategoryTemplate from './category-template';
-import siteMetadata from '../../jest/__fixtures__/site-metadata';
-import allMarkdownRemark from '../../jest/__fixtures__/all-markdown-remark';
-import pageContext from '../../jest/__fixtures__/page-context';
-import type { RenderCallback } from '../types';
 
 describe('CategoryTemplate', () => {
   const props = {
     data: {
-      ...allMarkdownRemark
+      allMarkdownRemark: {
+        group: [
+          {
+            fieldValue: 'test_0',
+            totalCount: 1
+          },
+          {
+            fieldValue: 'test_1',
+            totalCount: 2
+          }
+        ],
+        edges: [
+          {
+            node: {
+              id: 1,
+              fields: {
+                slug: '/test_0',
+                categorySlug: '/test'
+              },
+              frontmatter: {
+                date: '2016-09-01',
+                description: 'test_0',
+                category: 'test',
+                title: 'test_0',
+                template: 'post'
+              }
+            }
+          },
+          {
+            node: {
+              id: 2,
+              fields: {
+                slug: '/test_1',
+                categorySlug: '/test'
+              },
+              frontmatter: {
+                date: '2016-09-01',
+                description: 'test_1',
+                category: 'test',
+                title: 'test_1',
+                template: 'project'
+              }
+            }
+          }
+        ]
+      },
+      site: {
+        siteMetadata: {
+          title: 'test',
+          subtitle: 'test'
+        }
+      }
     },
-    ...pageContext
+    pageContext: {
+      category: 'test',
+      currentPage: 1,
+      prevPagePath: '/page/1',
+      nextPagePath: '/page/3',
+      hasNextPage: true,
+      hasPrevPage: true
+    }
   };
-
-  beforeEach(() => {
-    StaticQuery.mockImplementationOnce(
-      ({ render }: RenderCallback) => (
-        render(siteMetadata)
-      ),
-      useStaticQuery.mockReturnValue(siteMetadata)
-    );
-  });
 
   it('renders correctly', () => {
     const tree = renderer.create(<CategoryTemplate {...props} />).toJSON();

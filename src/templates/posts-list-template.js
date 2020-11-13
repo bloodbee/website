@@ -1,4 +1,3 @@
-// @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
@@ -6,16 +5,13 @@ import Sidebar from '../components/Sidebar';
 import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
-import { useSiteMetadata } from '../hooks';
-import type { PageContext, AllMarkdownRemark } from '../types';
 
-type Props = {
-  data: AllMarkdownRemark,
-  pageContext: PageContext
-};
+const PostsListTemplate = ({ data, pageContext }) => {
+  const {
+    title: siteTitle,
+    subtitle: siteSubtitle
+  } = data.site.siteMetadata;
 
-const PostsListTemplate = ({ data, pageContext }: Props) => {
-  const { title, subtitle } = useSiteMetadata();
   const {
     currentPage,
     hasNextPage,
@@ -25,11 +21,12 @@ const PostsListTemplate = ({ data, pageContext }: Props) => {
   } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
+  const pageTitle = currentPage > 0 ? `Posts - Page ${currentPage} | ${siteTitle}` : `Posts | ${siteTitle}`;
 
   return (
-    <Layout title={`Posts - ${title}`} description={subtitle}>
+    <Layout title={pageTitle} description={siteSubtitle}>
       <Sidebar />
-      <Page title="Posts">
+      <Page>
         <Feed edges={edges} />
         <Pagination
           prevPagePath={prevPagePath}
@@ -43,32 +40,32 @@ const PostsListTemplate = ({ data, pageContext }: Props) => {
 };
 
 export const query = graphql`
-  query PostsListTemplate($postsLimit: Int!, $postsOffset: Int!) {
+  query PostsListTemplate($limit: Int!, $offset: Int!) {
+    site {
+      siteMetadata {
+        title
+        subtitle
+      }
+    }
     allMarkdownRemark(
-        limit: $postsLimit,
-        skip: $postsOffset,
+        limit: $limit,
+        skip: $offset,
         filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } },
         sort: { order: DESC, fields: [frontmatter___date] }
       ){
       edges {
         node {
-          html
-          id
           fields {
             slug
             categorySlug
-            tagSlugs
           }
           frontmatter {
-            template
-            date
-            description
-            tags
             title
+            date
             category
-            socialImage {
-              publicURL
-            }
+            description
+            template
+            image1
           }
         }
       }

@@ -5,9 +5,6 @@ exports[`Icon renders correctly 1`] = `
   className="icon"
   viewBox="0 0 0 0"
 >
-  <title>
-    test
-  </title>
   <path
     d=""
   />

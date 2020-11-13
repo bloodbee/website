@@ -10,22 +10,22 @@ exports[`Tags renders correctly 1`] = `
     <li
       className="tags__list-item"
     >
-      <a
+      <Link
         className="tags__list-item-link"
-        href="/test_0"
+        to="/test_0"
       >
         test_0
-      </a>
+      </Link>
     </li>
     <li
       className="tags__list-item"
     >
-      <a
+      <Link
         className="tags__list-item-link"
-        href="/test_1"
+        to="/test_1"
       >
         test_1
-      </a>
+      </Link>
     </li>
   </ul>
 </div>
