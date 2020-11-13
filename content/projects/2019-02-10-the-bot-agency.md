@@ -4,13 +4,12 @@ title: The Bot Agency
 slug: "/projects/web-agency-specialized-in-chatbot-creation--the-bot-agency"
 customer: Myself
 website: "https://thebotagency.xyz"
-month: September
-year: '2017'
 draft: false
-date: 2019-02-17T03:17:13.143Z
+date: "2019-02-17T03:17:13.143Z"
+dateCreation: "2017-09-01T00:00:00.000Z"
 description: The bot agency is a startup specialized in conversational and automatized
   chatbots.
-category: Agency
+category: "Agency"
 tags:
   - web agency
   - chatbot
@@ -24,13 +23,13 @@ tags:
   - ai
   - machine learning
   - artifical intelligence
-image1: /media/thebotagency-logo.png
+socialImage: /media/thebotagency-logo.png
 ---
 In 2017, I launched [The Bot Agency](https://thebotagency.xyz). A startup specialized in conversational and automatized chatbots.
 
-![The Bot Agency homepage](/media/capture-d’écran-9-.png)
+![The Bot Agency homepage](/media/botagency-home.png)
 
-In 2017, the chatbot market was valued at $100 million and according to Global Market Insights, the amount is expected to jump in 2024 to **$1.34 billion**.
+In 2017, the chatbot market was valued at $100 million and according to Global Market Insights, the amount is expected to jump in 2024 to **1.3 billion USD**.
 
 I thought:
 <blockquote>This is the time to jump in it.</blockquote>

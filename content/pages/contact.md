@@ -2,6 +2,7 @@
 title: "Contact"
 template: "page"
 slug: "/contact"
+socialImage: "/media/image-4.jpg"
 ---
 
 ![Photo by Joanna Kosinska on Unsplash](/media/image-4.jpg)
