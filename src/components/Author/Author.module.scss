@@ -6,7 +6,6 @@
   max-width: $layout-post-width;
   padding-top: 20px;
   @include line-height(1);
-  @include margin-top(1);
   @include margin-bottom(2);
 
   &__bio {

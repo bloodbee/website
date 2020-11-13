@@ -1,22 +1,15 @@
-// @flow strict
 import React from 'react';
-import type { Entry, WidgetFor } from '../../types';
 
-type Props = {
-  entry: Entry,
-  widgetFor: WidgetFor
-};
-
-const PostPreview = ({ entry, widgetFor }: Props) => {
+const ProjectPreview = ({ entry, widgetFor }) => {
   const body = widgetFor('body');
   const title = entry.getIn(['data', 'title']);
 
   return (
-    <div className="post">
-      <h1 className="post__title">{title}</h1>
-      <div className="post__body">{body}</div>
+    <div className="project">
+      <h1 className="project__title">{title}</h1>
+      <div className="project__body">{body}</div>
     </div>
   );
 };
 
-export default PostPreview;
+export default ProjectPreview;

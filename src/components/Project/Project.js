@@ -1,39 +1,46 @@
-// @flow strict
 import React from 'react';
+import Disqus from 'disqus-react';
 import { Link } from 'gatsby';
-import Author from '../Author';
-import Comments from '../Comments';
+import moment from 'moment';
+
 import Content from '../Content';
-import Meta from '../Meta';
+import Author from '../Author';
 import Tags from '../Tags';
 import Sharing from '../Sharing';
+
 import styles from './Project.module.scss';
-import type { Node } from '../../types';
-import { useSiteMetadata } from '../../hooks';
 
-type Props = {
-  project: Node
-};
+const siteConfig = require('../../../config.js');
 
-const Project = ({ project }: Props) => {
-  const { url } = useSiteMetadata();
-  const { html } = project;
-  const { tagSlugs, slug } = project.fields;
+const Project = ({ project, url }) => {
   const {
     customer,
     website,
+    month,
+    year,
     tags,
     title,
     date,
-    dateCreation
+    slug
   } = project.frontmatter;
-  const sharingUrl = url + slug;
+
+  const { html } = project;
+  const { tagSlugs } = project.fields;
+
+  const urlProject = url + slug;
   const websiteUrl = website + '?utm_source=bloodbee.space&utm_medium=projects';
+
+  const disqusShortname = siteConfig.disqusShortname;
+  const disqusConfig = {
+      url: urlProject,
+      identifier: project.id,
+      title: title,
+  };
 
   return (
     <div className={styles['project']}>
       <Link className={styles['project__home-button']} to="/projects">All Projects</Link>
-      <Sharing url={sharingUrl} text={title}/>
+      <Sharing url={urlProject} text={title}/>
 
       <div className={styles['project__content']}>
         <Content body={html} title={title} />
@@ -47,16 +54,16 @@ const Project = ({ project }: Props) => {
           Website : <a href={websiteUrl} target="_blank">{website}</a>
         </p>
         <p className={styles['project__footer-item']}>
-          Created : {new Date(dateCreation).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}
+          Created {month} {year}
         </p>
-        <Meta date={date} />
-        {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
+        <p className={styles['project__footer-item']}>
+          Published {moment(date).format('D MMM YYYY')}
+        </p>
+        <Tags tags={tags} tagSlugs={tagSlugs} />
         <Author />
+        <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
       </div>
 
-      <div className={styles['project__comments']}>
-        <Comments slug={slug} title={project.frontmatter.title} />
-      </div>
     </div>
   );
 };

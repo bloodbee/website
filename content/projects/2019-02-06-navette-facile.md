@@ -4,11 +4,12 @@ title: Navette Facile
 slug: "/projects/hire-private-car-with-driver-from-airport-to-hotel"
 customer: Navette Facile
 website: 'http://navettefacile.com/'
+month: February
+year: '2018'
 draft: false
-date: "2019-01-31T17:30:00.000Z"
-dateCreation: "2018-02-01T00:00:00.000Z"
+date: 2019-01-31T17:30:00.000Z
 description: Easily hire a car with driver to take you from the airport to your hotel.
-category: "Web development"
+category: Web development
 tags:
   - laravel
   - redesign
@@ -18,7 +19,7 @@ tags:
   - B2B
   - B2C
   - from scratch
-socialImage: "/media/navette-facile-home.png"
+image1: /media/capture-d’écran-42-.png
 ---
 I first met the owner of navettefacile.com back in 2016 when I was working for YHAPPS (your health applications). There was a close friendship between the founder of this startup and this person who would become one of my clients for more than a year.
 
@@ -32,12 +33,12 @@ The project include many features such as :
 
 * A booking system where you decide a pick up point and a drop point, maybe some additionals steps, a date, a type a vehicule, and some options such as a baby-seat for your kid, etc.
 
-![Booking system on navettefacile.com](/media/navette-facile-devis.png)
+![Booking system on navettefacile.com](/media/capture-d’écran-46-.png)
 
 * A payment system with [BRED](https://www.bred.fr/index.html), so the main passenger can have is booking approved.
 * An admin dashboard where our customer can manage the bookings, the users, the options ...
 
-![Administration dashboard navettefacile.com](/media/navette-facile-admin.png)
+![Administration dashboard navettefacile.com](/media/capture-d’écran-45-.png)
 
 * Different types of user such a Particular, a Professional, a Transporter, an Admin, an Agency with a authentified account for all of them.
 * Many other features !
