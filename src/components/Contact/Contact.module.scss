@@ -51,11 +51,3 @@
     transform: translateY(4px);
   }
 }
-
-@include breakpoint-sm {
-  .contact {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-}

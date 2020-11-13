@@ -1,11 +1,9 @@
-// @flow strict
 import React from 'react';
-import { getContactHref } from '../../utils';
+import { graphql, StaticQuery } from 'gatsby';
 import styles from './Author.module.scss';
-import { useSiteMetadata } from '../../hooks';
 
-const Author = () => {
-  const { author } = useSiteMetadata();
+export const PureAuthor = ({ data }) => {
+  const { author } = data.site.siteMetadata;
 
   return (
     <div className={styles['author']}>
@@ -15,5 +13,23 @@ const Author = () => {
     </div>
   );
 };
+
+export const Author = (props) => (
+  <StaticQuery
+    query={graphql`
+      query AuthorQuery {
+        site {
+          siteMetadata {
+            author {
+              name
+              bio
+            }
+          }
+        }
+      }
+    `}
+    render={(data) => <PureAuthor {...props} data={data} />}
+  />
+);
 
 export default Author;

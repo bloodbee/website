@@ -1,4 +1,3 @@
-// @flow strict
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Author from './Author';
@@ -9,8 +8,7 @@ describe('Author', () => {
       name: 'test',
       photo: '/photo.jpg',
       bio: 'test'
-    },
-    isIndex: false
+    }
   };
 
   it('renders correctly', () => {

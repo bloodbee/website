@@ -1,22 +1,24 @@
-// @flow strict
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import kebabCase from 'lodash/kebabCase';
 import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
 import Page from '../components/Page';
-import { useSiteMetadata, useCategoriesList } from '../hooks';
 
-const CategoriesListTemplate = () => {
-  const { title, subtitle } = useSiteMetadata();
-  const categories = useCategoriesList();
+const CategoriesListTemplate = ({ data }) => {
+  const {
+    title,
+    subtitle
+  } = data.site.siteMetadata;
+
+  const { group } = data.allMarkdownRemark;
 
   return (
-    <Layout title={`Categories - ${title}`} description={subtitle}>
+    <Layout title={`Categories | ${title}`} description={subtitle}>
       <Sidebar />
       <Page title="Categories">
         <ul>
-          {categories.map((category) => (
+          {group.map((category) => (
             <li key={category.fieldValue}>
               <Link to={`/category/${kebabCase(category.fieldValue)}/`}>
                 {category.fieldValue} ({category.totalCount})
@@ -28,5 +30,24 @@ const CategoriesListTemplate = () => {
     </Layout>
   );
 };
+
+export const query = graphql`
+  query CategoriesListQuery {
+    site {
+      siteMetadata {
+        title
+        subtitle
+      }
+    }
+    allMarkdownRemark(
+      filter: { frontmatter: { template: { in: ["post", "project"] }, draft: { ne: true } } }
+    ) {
+      group(field: frontmatter___category) {
+        fieldValue
+        totalCount
+      }
+    }
+  }
+`;
 
 export default CategoriesListTemplate;

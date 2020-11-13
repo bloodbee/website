@@ -1,26 +1,42 @@
-// @flow strict
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { useStaticQuery, StaticQuery } from 'gatsby';
-import Sidebar from './Sidebar';
-import siteMetadata from '../../../jest/__fixtures__/site-metadata';
-import type { RenderCallback } from '../../types';
+import { PureSidebar as Sidebar } from './Sidebar';
 
 describe('Sidebar', () => {
-  beforeEach(() => {
-    StaticQuery.mockImplementationOnce(
-      ({ render }: RenderCallback) => (
-        render(siteMetadata)
-      ),
-      useStaticQuery.mockReturnValue(siteMetadata)
-    );
-  });
-
-  const props = {
-    isIndex: true
-  };
-
   it('renders correctly', () => {
+    const props = {
+      data: {
+        site: {
+          siteMetadata: {
+            author: {
+              name: 'name',
+              photo: '/photo.jpg',
+              bio: 'bio',
+              contacts: {
+                email: '#',
+                twitter: '#',
+                vkontakte: '#',
+                github: '#',
+                rss: '#',
+                telegram: '#'
+              }
+            },
+            copyright: 'copyright',
+            menu: [
+              {
+                label: 'Item 0',
+                path: '/#0/'
+              },
+              {
+                label: 'Item 1',
+                path: '/#1/'
+              }
+            ]
+          }
+        }
+      }
+    };
+
     const tree = renderer.create(<Sidebar {...props} />).toJSON();
     expect(tree).toMatchSnapshot();
   });

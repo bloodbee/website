@@ -10,22 +10,24 @@ exports[`Menu renders correctly 1`] = `
     <li
       className="menu__list-item"
     >
-      <a
+      <Link
+        activeClassName="menu__list-item-link--active"
         className="menu__list-item-link"
-        href="/#0/"
+        to="/#0/"
       >
         Item 0
-      </a>
+      </Link>
     </li>
     <li
       className="menu__list-item"
     >
-      <a
+      <Link
+        activeClassName="menu__list-item-link--active"
         className="menu__list-item-link"
-        href="/#1/"
+        to="/#1/"
       >
         Item 1
-      </a>
+      </Link>
     </li>
   </ul>
 </nav>

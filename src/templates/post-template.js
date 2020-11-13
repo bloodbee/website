@@ -1,40 +1,49 @@
-// @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Post from '../components/Post';
-import { useSiteMetadata } from '../hooks';
-import type { MarkdownRemark } from '../types';
 
-type Props = {
-  data: {
-    markdownRemark: MarkdownRemark
-  }
-};
+const PostTemplate = ({ data }) => {
+  const {
+    title: siteTitle,
+    subtitle: siteSubtitle,
+    url: url
+  } = data.site.siteMetadata;
 
-const PostTemplate = ({ data }: Props) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
-  const { frontmatter } = data.markdownRemark;
-  const { title: postTitle, description: postDescription = '', socialImage } = frontmatter;
-  const metaDescription = postDescription || siteSubtitle;
-  const socialImageUrl = socialImage?.publicURL;
+  const {
+    title: postTitle,
+    description: postDescription
+  } = data.markdownRemark.frontmatter;
+
+  const metaDescription = postDescription !== null ? postDescription : siteSubtitle;
 
   return (
-    <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
-      <Post post={data.markdownRemark} />
+    <Layout title={`${postTitle} | ${siteTitle}`} description={metaDescription}>
+      <Post post={data.markdownRemark} url={url}/>
     </Layout>
   );
 };
 
 export const query = graphql`
   query PostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        author {
+          name
+          contacts {
+            twitter
+          }
+        }
+        subtitle
+        title
+        url
+      }
+    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
       fields {
-        slug
         tagSlugs
-        categorySlug
       }
       frontmatter {
         date
@@ -42,10 +51,8 @@ export const query = graphql`
         tags
         title
         template
-        category
-        socialImage {
-          publicURL
-        }
+        slug
+        image1
       }
     }
   }
