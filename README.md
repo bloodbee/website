@@ -3,6 +3,10 @@
     Lumen
 </h1>
 
+<h3 align="center">
+  My personnal website.
+</h4>
+
 <h4 align="center">
   A constantly evolving and thoughtful architecture for creating new static blogs.
 </h4>
