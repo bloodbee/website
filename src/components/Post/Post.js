@@ -1,56 +1,46 @@
+// @flow strict
 import React from 'react';
-import Disqus from 'disqus-react';
 import { Link } from 'gatsby';
-import moment from 'moment';
-
 import Author from '../Author';
+import Comments from '../Comments';
 import Content from '../Content';
+import Meta from '../Meta';
 import Tags from '../Tags';
-
 import Sharing from '../Sharing';
-
 import styles from './Post.module.scss';
+import type { Node } from '../../types';
+import { useSiteMetadata } from '../../hooks';
 
-const siteConfig = require('../../../config.js');
+type Props = {
+  post: Node
+};
 
-const Post = ({ post, url }) => {
-  const {
-    tags,
-    title,
-    date,
-    slug
-  } = post.frontmatter;
-
+const Post = ({ post }: Props) => {
+  const { url } = useSiteMetadata();
   const { html } = post;
-  const { tagSlugs } = post.fields;
+  const { tagSlugs, slug } = post.fields;
+  const { tags, title, date } = post.frontmatter;
 
-  const urlPost = url + slug;
-
-  const disqusShortname = siteConfig.disqusShortname;
-  const disqusConfig = {
-      url: urlPost,
-      identifier: post.id,
-      title: title,
-  };
+  const sharingUrl = url + slug;
 
   return (
     <div className={styles['post']}>
       <Link className={styles['post__home-button']} to="/posts">All Posts</Link>
-      <Sharing url={urlPost} text={title}/>
+      <Sharing url={sharingUrl} text={title}/>
 
       <div className={styles['post__content']}>
         <Content body={html} title={title} />
       </div>
 
       <div className={styles['post__footer']}>
-        <p className={styles['post__footer-item']}>
-          Published {moment(date).format('D MMM YYYY')}
-        </p>
-        <Tags tags={tags} tagSlugs={tagSlugs} />
+        <Meta date={date} />
+        {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
         <Author />
-        <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
       </div>
 
+      <div className={styles['post__comments']}>
+        <Comments slug={slug} title={post.frontmatter.title} />
+      </div>
     </div>
   );
 };

@@ -2,10 +2,7 @@
 @import '../../assets/scss/mixins';
 
 .tags {
-  @include padding-top(.5);
-  @include padding-bottom(.5);
-
-  border-top: 1px solid $color-gray-border;
+  @include margin-bottom(.5);
 
   &__list {
     list-style: none;

@@ -4,9 +4,9 @@ const siteConfig = require('./config.js');
 const postCssPlugins = require('./postcss-config.js');
 
 module.exports = {
+  pathPrefix: siteConfig.pathPrefix,
   siteMetadata: {
     url: siteConfig.url,
-    siteUrl: siteConfig.url,
     title: siteConfig.title,
     subtitle: siteConfig.subtitle,
     copyright: siteConfig.copyright,
@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/content`,
-        name: 'pages'
+        path: `${__dirname}/static`,
+        name: 'assets'
       }
     },
     {
@@ -32,8 +32,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'assets',
-        path: `${__dirname}/static`
+        path: `${__dirname}/content`,
+        name: 'pages'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'css',
+        path: `${__dirname}/static/css`
       }
     },
     {
@@ -43,8 +50,7 @@ module.exports = {
           {
             site {
               siteMetadata {
-                site_url: siteUrl
-                siteUrl
+                site_url: url
                 title
                 description: subtitle
               }
@@ -53,11 +59,12 @@ module.exports = {
         `,
         feeds: [{
           serialize: ({ query: { site, allMarkdownRemark } }) => (
-            allMarkdownRemark.edges.map((edge) => Object.assign({}, edge.node.frontmatter, {
+            allMarkdownRemark.edges.map((edge) => ({
+              ...edge.node.frontmatter,
               description: edge.node.frontmatter.description,
               date: edge.node.frontmatter.date,
-              url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-              guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+              url: site.siteMetadata.site_url + edge.node.fields.slug,
+              guid: site.siteMetadata.site_url + edge.node.fields.slug,
               custom_elements: [{ 'content:encoded': edge.node.html }]
             }))
           ),
@@ -86,7 +93,8 @@ module.exports = {
                 }
               }
             `,
-          output: '/rss.xml'
+          output: '/rss.xml',
+          title: siteConfig.title
         }]
       }
     },
@@ -94,17 +102,29 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-katex',
+            options: {
+              strict: 'ignore'
+            }
+          },
           {
             resolve: 'gatsby-remark-images',
-            options: { maxWidth: 960 }
+            options: {
+              maxWidth: 960,
+              withWebp: true,
+            }
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: { wrapperStyle: 'margin-bottom: 1.0725rem' }
           },
+          'gatsby-remark-autolink-headers',
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants'
+          'gatsby-remark-smartypants',
+          'gatsby-remark-external-links'
         ]
       }
     },
@@ -114,12 +134,17 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
+        modulePath: `${__dirname}/src/cms/index.js`,
       }
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: siteConfig.googleAnalyticsId }
+      resolve: 'gatsby-plugin-google-gtag',
+      options: {
+        trackingIds: [siteConfig.googleAnalyticsId],
+        pluginConfig: {
+          head: true,
+        },
+      },
     },
     {
       resolve: 'gatsby-plugin-sitemap',
@@ -128,7 +153,7 @@ module.exports = {
           {
             site {
               siteMetadata {
-                siteUrl
+                siteUrl: url
               }
             }
             allSitePage(
@@ -161,16 +186,8 @@ module.exports = {
         background_color: '#FFF',
         theme_color: '#F7A046',
         display: 'standalone',
-        icon: 'static/photo.jpg'
+        icon: 'static/avatars.png'
       },
-    },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://bloodbee.space',
-        sitemap: 'https://bloodbee.space/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
@@ -183,6 +200,8 @@ module.exports = {
           camelCase: false,
         }
       }
-    }
+    },
+    'gatsby-plugin-flow',
+    'gatsby-plugin-optimize-svgs',
   ]
 };

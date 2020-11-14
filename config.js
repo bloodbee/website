@@ -2,12 +2,14 @@
 
 module.exports = {
   url: `https://bloodbee.space`,
+  pathPrefix: '/',
   title: 'Bloodbee - Machine learning and web developer',
   subtitle: 'Student in Professional Master Degree @ Epitech, machine learning and web developer.',
   copyright: '© All rights reserved.',
+  postsPerPage: 4,
   disqusShortname: 'bloodbeespace',
-  limitPerPage: 4,
   googleAnalyticsId: 'UA-58659241-1',
+  useKatex: false,
   menu: [
     {
       label: 'Home',

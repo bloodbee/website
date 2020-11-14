@@ -1,3 +1,4 @@
+// @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
@@ -5,12 +6,16 @@ import Sidebar from '../components/Sidebar';
 import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
+import { useSiteMetadata } from '../hooks';
+import type { AllMarkdownRemark, PageContext } from '../types';
 
-const TagTemplate = ({ data, pageContext }) => {
-  const {
-    title: siteTitle,
-    subtitle: siteSubtitle
-  } = data.site.siteMetadata;
+type Props = {
+  data: AllMarkdownRemark,
+  pageContext: PageContext
+};
+
+const TagTemplate = ({ data, pageContext }: Props) => {
+  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
 
   const {
     tag,
@@ -22,7 +27,7 @@ const TagTemplate = ({ data, pageContext }) => {
   } = pageContext;
 
   const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `All Posts tagged as "${tag}" - Page ${currentPage} | ${siteTitle}` : `All Posts tagged as "${tag}" | ${siteTitle}`;
+  const pageTitle = currentPage > 0 ? `All Posts tagged as "${tag}" - Page ${currentPage} - ${siteTitle}` : `All Posts tagged as "${tag}" - ${siteTitle}`;
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
@@ -41,7 +46,7 @@ const TagTemplate = ({ data, pageContext }) => {
 };
 
 export const query = graphql`
-  query TagPage($tag: String, $limit: Int!, $offset: Int!) {
+  query TagPage($tag: String, $postsLimit: Int!, $postsOffset: Int!) {
     site {
       siteMetadata {
         title
@@ -49,14 +54,13 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-        limit: $limit,
-        skip: $offset,
-        filter: { frontmatter: { tags: { in: [$tag] }, template: { in: ["post", "project"] }, draft: { ne: true } } },
+        limit: $postsLimit,
+        skip: $postsOffset,
+        filter: { frontmatter: { tags: { in: [$tag] }, template: { eq: "post" }, draft: { ne: true } } },
         sort: { order: DESC, fields: [frontmatter___date] }
       ){
       edges {
         node {
-          id
           fields {
             slug
             categorySlug
@@ -66,7 +70,6 @@ export const query = graphql`
             date
             category
             description
-            template
           }
         }
       }

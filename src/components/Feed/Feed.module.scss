@@ -20,10 +20,12 @@
 
         &:hover,
         &:focus {
-          color: $color-base;
-          border-bottom: 1px solid $color-base;
+          color: $color-primary;
+          border-bottom: 1px solid $color-primary;
         }
+
       }
+
     }
 
     &-description {
@@ -35,7 +37,7 @@
     &-meta {
       &-time {
         font-size: $typographic-small-font-size;
-        color: $color-base;
+        color: $color-secondary;
         font-weight: 600;
         text-transform: uppercase;
       }
@@ -55,7 +57,9 @@
           &:focus {
             color: $color-primary;
           }
+
         }
+
       }
 
       &-template {
@@ -71,6 +75,7 @@
           }
         }
       }
+
     }
 
     &-readmore {
@@ -82,6 +87,7 @@
         color: $color-primary;
         border-bottom: 1px solid $color-primary;
       }
+
     }
     &-readmore-project {
       width: 100%;

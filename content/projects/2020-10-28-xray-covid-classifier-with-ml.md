@@ -3,18 +3,17 @@ template: project
 title: XRAY Covid Classifier with ML
 slug: xray-covid-classifier-ml
 customer: None
-month: November
-year: 2020-10-28T16:31:59.894Z
 draft: true
-date: 2020-10-28T16:31:59.916Z
+date: "2020-10-28T16:31:59.916Z"
+dateCreation: "2020-11-01T00:00:00.000Z"
 description: zqdq
-category: Machine Learning
+category: "Machine Learning"
 tags:
   - machine learning
   - covid
   - coronavirus
   - classifier
   - xray
-image1: /media/person1107_virus_1831.jpeg
+socialImage: "/media/person1107_virus_1831.jpeg"
 ---
 qzdzq
