@@ -61,7 +61,7 @@ Let's take Airbnb as example :
 *Let's go back to the start. It's late 2007 in San Francisco. Airbnb founders Brian Chesky and Joe Gebbia just moved from New York. Without employment, they were having trouble paying their rent and were looking for a way to earn some extra cash. They noticed that all hotel rooms in the city were booked, as the local Industrial Design conference attracted a lot of visitors.*\
 *The youngsters saw an opportunity. They bought a few airbeds and quickly put up a site called “Air Bed and Breakfast.” The idea was to offer visitors a place to sleep and breakfast in the morning. They charged $80 each a night. The idea succeeded and the first Airbnb guests were born: a 30-year-old Indian man, a 35-year-old woman from Boston and a 45-year-old father of four from Utah sleeping on their floor.*
 
-This little tell us that the Airbnb co-founders found an opportunity, tested it and discovered their future service. Try to do the same when you have the occasion!
+This little story tells us that the Airbnb co-founders found an opportunity, tested it and discovered their future service. Try to do the same when you have the occasion!
 
 #### 4) Which problem is solved?
 
