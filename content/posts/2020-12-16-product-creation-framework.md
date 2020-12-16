@@ -139,7 +139,7 @@ You have to understand the client. Who is he or she? What does he or she do in l
 
 #### 3) Sending a questionnaire to potential clients/registrants
 
-When you have done the phone calls, and defined personas, you can send your first customer a questionnaire.\
+When you have done the phone call, and defined personas, you can send your first customer a questionnaire.\
 In it you will have a condensing for all the phone call you did.
 
 You really should use open questions : replace the "is it..." with "to what extent...".
