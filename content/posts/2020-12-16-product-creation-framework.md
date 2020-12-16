@@ -1,7 +1,7 @@
 ---
 template: post
 title: Product creation framework
-slug: "/blog/product-creation-framework"
+slug: /blog/product-creation-framework
 socialImage: /media/creation-product-framework-cover.jpg
 draft: false
 date: 2020-12-16T00:00:09.087Z
@@ -53,7 +53,7 @@ If you can do that, it's a good point for you !
 
 #### 2) You have to listen to the market and the people in it.
 
-Listen to your family, your colleagues, the people around you. We all have issues with something in this world, something that can maybe find a fix ?
+Listen to your family, your colleagues, the people around you. We all have issues with something in this world, something that can maybe be fixed?
 
 #### 3) Know how to seize opportunities (example: Uber, Airbnb, ...).
 
@@ -62,9 +62,7 @@ Let's take Airbnb as example :
 *Let's go back to the start. It's late 2007 in San Francisco. Airbnb founders Brian Chesky and Joe Gebbia just moved from New York. Without employment, they were having trouble paying their rent and were looking for a way to earn some extra cash. They noticed that all hotel rooms in the city were booked, as the local Industrial Design conference attracted a lot of visitors.*\
 *The youngsters saw an opportunity. They bought a few airbeds and quickly put up a site called “Air Bed and Breakfast.” The idea was to offer visitors a place to sleep and breakfast in the morning. They charged $80 each a night. The idea succeeded and the first Airbnb guests were born: a 30-year-old Indian man, a 35-year-old woman from Boston and a 45-year-old father of four from Utah sleeping on their floor.*
 
-
-
-#### 4) Which problem is solved? 
+#### 4) Which problem is solved?
 
 It's easy to know this if you are a market player yourself. 
 
@@ -80,14 +78,12 @@ Questions that a company must ask itself :
 
   ![manipulation matrice](/media/manipulation-matrice.png "Manipulation Matrice from Nir Eyal")
 
-
-
 #### 6) Data collection and behavioral analysis
 
 This is done by observing the frustrations <i class="color-warning fas fa-sad-tear"></i> and motivations <i class="color-warning fas fa-smile"></i> of the future users. They use specifics sentences to describe their F & M.
 
 Frustations => *"I can't do it..."*, *"I'm wasting time..."*, etc.\
-Motivations => *"I would like to..."*, *"I want to..."*, *"I would like to..."*, etc.
+Motivations => *"I would like to..."*, *"I want to..."*, etc.
 
 Thanks to this we can have a sensible, emotional, salesmanlike and intense speech.
 
@@ -102,6 +98,8 @@ One of the best structure that actually work for a landing page is:
 **Section 3:** Emotional content. Why is it better? Why does it improve people's lives?\
 **Pre-footer:** Call To Action (CTA) => Email for newsletter or sign up button or buy button.\
 **Footer:** Sitemap, links, credits, etc.
+
+Please, have a look at one of my recent project called [Reflect](https://reflect-mirror.com/), you can see that this type of structure is quite good.
 
 #### 8) Using acquisition channels to get visitors
 
@@ -131,11 +129,11 @@ Unwinding the phone call, how to do:
 
 > A persona, depending to the context, can refer to either the public image of one's personality, or the social role that one adopts, or a fictional character. - Wikipedia
 
-You have to understand the client. Who is he or she? What does he or she do in life? Why did you buy the product/service?
+You have to understand the client. Who is he or she? What does he or she do in life? Why did he buy the product/service?
 
 #### 3) Sending a questionnaire to potential clients/registrants
 
-When you have done the phone calls, and defined personas, you can send your first customer a questionnaire.\
+When you have done the phone call, and defined personas, you can send your first customer a questionnaire.\
 In it you will have a condensing for all the phone call you did.
 
 <i class="color-success fas fa-check-circle"></i> You really should use open questions : replace the "is it..." with "to what extent...".
