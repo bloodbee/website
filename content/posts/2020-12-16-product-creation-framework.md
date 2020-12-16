@@ -1,7 +1,7 @@
 ---
 template: post
 title: Product creation framework
-slug: product-creation-framework
+slug: /blog/product-creation-framework
 socialImage: /media/creation-product-framework-cover.jpg
 draft: true
 date: 2020-12-16T00:00:09.087Z
