@@ -135,7 +135,7 @@ To finish, don't hesitate to ask to clarify a customer's answer when it is not u
 
 > A persona, depending to the context, can refer to either the public image of one's personality, or the social role that one adopts, or a fictional character. - Wikipedia
 
-You have to understand the client. Who is he or she? What does he or she do in life? Why did you buy the product/service?
+You have to understand the client. Who is he or she? What does he or she do in life? Why did he buy the product/service?
 
 #### 3) Sending a questionnaire to potential clients/registrants
 
