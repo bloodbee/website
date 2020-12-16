@@ -20,7 +20,6 @@ tags:
   - feedback
   - delegation
 ---
-
 I've worked for 3 different startups so far, each with a single common goal: To create a product that people like and find its product market fit.
 
 However, some of these startups were unable to find their product market fit and had no other choice but to put an end to the great adventure that had been started.\
@@ -62,6 +61,8 @@ Let's take Airbnb as example :
 *Let's go back to the start. It's late 2007 in San Francisco. Airbnb founders Brian Chesky and Joe Gebbia just moved from New York. Without employment, they were having trouble paying their rent and were looking for a way to earn some extra cash. They noticed that all hotel rooms in the city were booked, as the local Industrial Design conference attracted a lot of visitors.*\
 *The youngsters saw an opportunity. They bought a few airbeds and quickly put up a site called “Air Bed and Breakfast.” The idea was to offer visitors a place to sleep and breakfast in the morning. They charged $80 each a night. The idea succeeded and the first Airbnb guests were born: a 30-year-old Indian man, a 35-year-old woman from Boston and a 45-year-old father of four from Utah sleeping on their floor.*
 
+This little tell us that the Airbnb co-founders found an opportunity, tested it and discovered their future service. Try to do the same when you have the occasion!
+
 #### 4) Which problem is solved?
 
 It's easy to know this if you are a market player yourself. 
@@ -74,9 +75,11 @@ Questions that a company must ask itself :
 
 * Is my product used?
 * Does it improve people's lives?
-* If it's "no" to both questions, then the product is immoral or you are a "DEALER".
+* If it's "no" to both questions, then the product is immoral or you are a "DEALER", this is not the best position for an entreprener.
 
   ![manipulation matrice](/media/manipulation-matrice.png "Manipulation Matrice from Nir Eyal")
+
+
 
 #### 6) Data collection and behavioral analysis
 
@@ -161,7 +164,7 @@ Principle of the adoption curve :
 
 #### 1) Simple & minimalist version
 
-KISS principle (Keep It Simple and Stupid).
+KISS principle (Keep It Simple and Stupid). Try to keep your first version with less functionalities, but good one.
 
 Iterate fast and often.
 
@@ -262,20 +265,18 @@ You should always follow the AARRR funnel to design new features.
 
 <i class="color-success fas fa-check-circle"></i> A good product decision necessarily leads to growth.
 
-More on agile development here : [https://www.atlassian.com/agile](https://www.atlassian.com/agile).
+More on agile development here : <https://www.atlassian.com/agile>.
 
 ## VII. Delegating product management
 
 The team must be composed of at least :
 
 * **Product manager**\
-Hard skill => Logic of dev, knows how to build a user path.\
-Soft skill => Understands the target business, good understanding with the UX designer, sociable, understanding.
-
+  Hard skill => Logic of dev, knows how to build a user path.\
+  Soft skill => Understands the target business, good understanding with the UX designer, sociable, understanding.
 * **UX/UI Designer**\
-Out of order: Sketch, Photoshop.\
-Soft Skill: Knows how to build a user path, creative.
-
+  Out of order: Sketch, Photoshop.\
+  Soft Skill: Knows how to build a user path, creative.
 * **Dev back-end + dev front-end** or **dev full-stack**\
   The full-stack dev can be useful at the beginning of the project because it will be able to work on all the technical points.
   A working team is in constant evolution and has the hards skills and softs skills to create a scalable product/business model
