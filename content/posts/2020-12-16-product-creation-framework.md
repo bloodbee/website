@@ -54,7 +54,7 @@ If you can do that, it's a good point for you !
 
 #### 2) You have to listen to the market and the people in it.
 
-Listen to your family, your colleagues, the people around you. We all have issues with something in this world, something that can maybe find a fix ?
+Listen to your family, your colleagues, the people around you. We all have issues with something in this world, something that can maybe be fixed?
 
 #### 3) Know how to seize opportunities (example: Uber, Airbnb, ...).
 
@@ -64,9 +64,7 @@ Let's take Airbnb as example :
 
 *The youngsters saw an opportunity. They bought a few airbeds and quickly put up a site called “Air Bed and Breakfast.” The idea was to offer visitors a place to sleep and breakfast in the morning. They charged $80 each a night. The idea succeeded and the first Airbnb guests were born: a 30-year-old Indian man, a 35-year-old woman from Boston and a 45-year-old father of four from Utah sleeping on their floor.*
 
-
-
-#### 4) Which problem is solved? 
+#### 4) Which problem is solved?
 
 It's easy to know this if you are a market player yourself. 
 
@@ -82,15 +80,13 @@ Questions that a company must ask itself :
 
   ![manipulation matrice](/media/manipulation-matrice.png "Manipulation Matrice from Nir Eyal")
 
-
-
 #### 6) Data collection and behavioral analysis
 
 This is done by observing the frustrations and motivations of the future users. They use specifics sentences to describe their F & M.
 
 Frustations => *"I can't do it..."*, *"I'm wasting time..."*, etc.
 
-Motivations => *"I would like to..."*, *"I want to..."*, *"I would like to..."*, etc.
+Motivations => *"I would like to..."*, *"I want to..."*, etc.
 
 Thanks to this we can have a sensible, emotional, salesmanlike and intense speech.
 The content of our website will then be articulated around this speech.
