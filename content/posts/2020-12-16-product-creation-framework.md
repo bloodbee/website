@@ -105,6 +105,8 @@ Pre-footer: Call To Action (CTA) => Email for newsletter or sign up button or bu
 
 Footer: Sitemap, links, credits, etc.
 
+Please, have a look at one of my recent project called [Reflect](https://reflect-mirror.com/), you can see that this type of structure is quite good.
+
 #### 8) Using acquisition channels to get visitors
 
 Forums, social networks, display & social ad, seo, sem, referral program ... (19 different existing channels, I will not list them all, you can easily find it on google).
