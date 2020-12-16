@@ -1,4 +1,29 @@
 
+.color-primary {
+  color: $color-primary;
+}
+
+.color-secondary {
+  color: $color-secondary;
+}
+
+.color-base {
+  color: $color-base;
+}
+
+.color-success {
+  color: #198754;
+}
+.color-danger {
+  color: #dc3545;
+}
+.color-warning {
+  color: #ffc107;
+}
+.color-info {
+  color: #0dcaf0;
+}
+
 blockquote {
   color: $color-secondary;
 }

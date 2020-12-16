@@ -45,6 +45,7 @@ const Layout = ({
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
         <meta property="twitter:url" content="https://bloodbee.space/" />
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg></script>
       </Helmet>
       {children}
     </div>
