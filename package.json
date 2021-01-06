@@ -52,7 +52,7 @@
     "gatsby-plugin-netlify-cms": "^4.3.17",
     "gatsby-plugin-offline": "^3.3.3",
     "gatsby-plugin-optimize-svgs": "^1.0.4",
-    "gatsby-plugin-react-helmet": "^3.3.14",
+    "gatsby-plugin-react-helmet": "^3.8.0",
     "gatsby-plugin-sass": "2.3.22",
     "gatsby-plugin-sharp": "^2.7.1",
     "gatsby-plugin-sitemap": "^2.5.1",
