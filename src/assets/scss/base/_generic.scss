@@ -78,6 +78,14 @@ img {
   -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
   box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);*/
   border-radius: 5px;
+  transition: 0.8s ease-in-out !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img:hover {
+  transform: scale(1.08) !important;
 }
 
 hr {
