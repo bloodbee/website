@@ -37,7 +37,7 @@ module.exports = {
     photo: '/avatars.png',
     bio: 'Student in Professional Master Degree @ Epitech, machine learning and web developer, freelancer and entreprener. Also artificial intelligence, big data and blockchain enthusiast. I started learning IT around 13 years old and I never stopped.',
     contacts: {
-      email: 'mathieu_dufour@hotmail.fr',
+      email: 'mathieu@bloodbee.space',
       github: 'bloodbee',
       linkedin: 'dufourmathieu',
       twitter: 'Mathieu_Dufour',
