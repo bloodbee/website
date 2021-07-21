@@ -38,6 +38,7 @@
     background-color: $color-gray-bg;
     border: none;
     border-radius: $button-border-radius;
+    transition: .8s;
   }
 
   button:hover{

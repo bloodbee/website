@@ -28,14 +28,24 @@
       text-align: center;
       border: 1px solid $color-gray-bg;
 
+      &:hover {
+        transform: rotate(360deg);
+        transition: 1s ease-in-out;
+        cursor: pointer;
+        background-color: $color-gray-bg;
+        color: white;
+      }
+
       &-link {
         border: 0;
         display: flex;
         color: $color-base;
-  
+
+        
         &:hover,
         &:focus {
-          color: $color-primary;
+          color: $color-base;
+          
         }
 
       }
