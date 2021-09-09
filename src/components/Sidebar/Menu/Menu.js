@@ -24,6 +24,16 @@ const Menu = ({ menu }: Props) => (
           </Link>
         </li>
       ))}
+      <li className={styles['menu__list-item']}>
+        <a
+          href="media/CVEN.pdf" 
+          target="_blank"
+          className={styles['menu__list-item-link']}
+          activeClassName={styles['menu__list-item-link--active']}
+        >
+          Curriculum Vitae
+        </a>
+      </li>
     </ul>
   </nav>
 );

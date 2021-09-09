@@ -23,10 +23,6 @@ module.exports = {
       label: 'Blog',
       path: '/posts'
     },
-    /*{
-      label: 'CV',
-      path: '/media/CVENG.pdf'
-    }, */
     {
       label: 'Contact',
       path: '/contact'
@@ -36,6 +32,7 @@ module.exports = {
     name: 'Mathieu "Bloodbee" Dufour',
     photo: '/avatars.png',
     bio: 'Student in Professional Master Degree @ Epitech, machine learning and web developer, freelancer and entreprener. Also artificial intelligence, big data and blockchain enthusiast. I started learning IT around 13 years old and I never stopped.',
+    cv: 'media/CVENG.pdf',
     contacts: {
       email: 'mathieu@bloodbee.space',
       github: 'bloodbee',
