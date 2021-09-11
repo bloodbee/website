@@ -15,14 +15,12 @@ tags:
   - learning
   - school
 ---
-
-
 Good morning, dear readers,
 
 It's been a long time since I've done a post! Do you remember, in this [post](https://bloodbee.space/blog/travel-technological-retreat-15-month), I mentioned the fact that I was entering a professional master's degree at [Epitech](https://www.epitech.eu/)?
 **That was 2 years ago.**
 
-It's done and I think that a little feedback is needed.
+It's done and I think that a little feedback is needed. <i class="color-info far fa-thumbs-up"></i>
 
 ## What is Epitech?
 
@@ -76,7 +74,7 @@ In my second year, where I chose a specialization in Artificial Intelligence / B
 
   The final result of this project can be found at <https://iliketrainsbot.herokuapp.com/> and you can find the source code [here](https://github.com/bloodbee/T-AIA_901).
 
-Despite all the projects realized, some being more interesting than others, I think that the global feeling remains quite positive, because the goal of any developer is also to learn new ways of doing things, new technologies and methods, **to be more efficient in his future projects**.
+Despite all the projects realized, some being more interesting than others, I think that the global feeling remains quite positive, because the goal of any developer is also to learn new ways of doing things, new technologies and methods, **to be more efficient in his future projects**. <i class="color-success fas fa-check-circle"></i>
 
 ## Work-study contract
 
@@ -92,9 +90,7 @@ These inputs were focused on the primary needs concerning an apartment search (e
 
 This work was essentially *research and development* because I was the only one in the startup with some knowledge in AI and machine learning, thanks to EPITECH.
 
-Because of Covid-19, the company was shut down for several months. I felt the need to change and find a new company where I could grow.
-
-
+Because of Covid-19, the company was shut down for several months. I felt the need to change and find a new company where I could grow. <i class="color-warning fas fa-frown"></i>
 
 #### Fullstack & Lead Dev
 
@@ -105,8 +101,6 @@ This company also develops in parallel an e-learning offer on the wine universe.
 \
 I started as a **full-stack web developer** and was able to evolve into a **lead developer** later on, with a team of 2 other developers to manage.
 
-
-
 ## To conclude
 
 EPITECH is an experience in its own, which many IT schools are beginning to emulate.
@@ -116,4 +110,4 @@ The learning philosophy is perfectly suited for developers and provides a solid 
 
 I can only recommend the professional master's degree, which allows you to learn, to work for 2 years, but also to pay for the school, which is quite expensive (about 9000€ / year).
 
-I met collaborators, friends and kind people who I think I will remember for the rest of my life.
+I met collaborators, friends and kind people who I think I will remember for the rest of my life. <i class="color-danger fas fa-heart"></i>
