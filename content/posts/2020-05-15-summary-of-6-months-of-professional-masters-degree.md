@@ -113,4 +113,6 @@ The learning philosophy is perfectly suited for developers and provides a solid 
 
 I can only recommend the professional master's degree, which allows you to learn, to work for 2 years, but also to pay for the school, which is quite expensive (about 9000€ / year).
 
-I met collaborators, friends and kind people who I think I will remember for the rest of my life. <i class="color-danger fas fa-heart"></i>
+I met collaborators, friends and kind people who I think I will remember for the rest of my life. <i class="color-danger fas fa-heart"></i>\
+\
+**It is now the opportunity to take time for myself and my various projects, hoping to always give the best in this profession that has become a passion over the years.**
