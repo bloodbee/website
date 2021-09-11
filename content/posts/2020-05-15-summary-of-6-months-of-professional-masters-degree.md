@@ -3,8 +3,8 @@ template: post
 title: Summary of two years in a Professional Master's degree
 slug: /summary-2-years-pro-master-degree
 socialImage: /media/movable-type.jpg
-draft: true
-date: 2021-09-10T14:15:53.864Z
+draft: false
+date: 2021-09-11T12:26:57.639Z
 description: Summary of two years in Epitech (European Institute of Technology)
   school, one of the most renoun in France for IT and computer science.
 category: post
@@ -15,6 +15,8 @@ tags:
   - learning
   - school
 ---
+
+
 Good morning, dear readers,
 
 It's been a long time since I've done a post! Do you remember, in this [post](https://bloodbee.space/blog/travel-technological-retreat-15-month), I mentioned the fact that I was entering a professional master's degree at [Epitech](https://www.epitech.eu/)?
@@ -76,13 +78,42 @@ In my second year, where I chose a specialization in Artificial Intelligence / B
 
 Despite all the projects realized, some being more interesting than others, I think that the global feeling remains quite positive, because the goal of any developer is also to learn new ways of doing things, new technologies and methods, **to be more efficient in his future projects**.
 
-
-
 ## Work-study contract
 
 During 2 years, I had the opportunity to work in 2 high potential startups, with benevolent and conscientious collaborators.
 
+#### AI & Machine Learning
 
-The first one was [Where You Love](https://whereyoulove.com/) where I was in charge as a Machine Learning developer to develop an artificial intelligence that could, via the inputs given by the user, propose him his ideal real estate.
+![where you love logo + cathedral](/media/wyl.jpg "Logo Where You Love with cathedral")
 
-These inputs were focused on the primary needs concerning an apartment search (e.g. living space, number of rooms, energy efficiency class, etc.), but also on the secondary needs that every human being has and which he wonders about when choosing his new apartment or his new house (e.g. distance to the work, parks nearby, an Indian restaurant with at least 3 stars on yelp nearby, etc.).
+The first one was [Where You Love](https://whereyoulove.com/) where I was in charge as a **machine learning developer** to develop an artificial intelligence that could, via the inputs given by the user, propose him his ideal real estate.
+
+These inputs were focused on the primary needs concerning an apartment search (e.g. living space, number of rooms, energy efficiency class, etc.), but also on the *secondary needs* that every human being has and which he wonders about when choosing his new apartment or his new house (e.g. distance to the work, parks nearby, an Indian restaurant with at least 3 stars on yelp nearby, etc.).
+
+This work was essentially *research and development* because I was the only one in the startup with some knowledge in AI and machine learning, thanks to EPITECH.
+
+Because of Covid-19, the company was shut down for several months. I felt the need to change and find a new company where I could grow.
+
+
+
+#### Fullstack & Lead Dev
+
+![logo vinovibes](/media/logo.png "Vinovibes")
+
+One year and a half after the beginning of my professional master, I joined [Vinovibes](https://vinovibes.fr/), which is a startup creating digital tools dedicated to the wine tourism industry.
+This company also develops in parallel an e-learning offer on the wine universe.\
+\
+I started as a **full-stack web developer** and was able to evolve into a **lead developer** later on, with a team of 2 other developers to manage.
+
+
+
+## To conclude
+
+EPITECH is an experience in its own, which many IT schools are beginning to emulate.
+This school allows you to learn a lot of new languages, new technologies, and to *build a network* present in several countries.
+
+The learning philosophy is perfectly suited for developers and provides a solid foundation for future professionals.
+
+I can only recommend the professional master's degree, which allows you to learn, to work for 2 years, but also to pay for the school, which is quite expensive (about 9000€ / year).
+
+I met collaborators, friends and kind people who I think I will remember for the rest of my life.
