@@ -10,7 +10,7 @@ description: >-
   create a product that people love.
 
   Find the episodes on https://www.koudetat.co/episodes/creer-un-produit-introduction.
-category: framework
+category: "Framework"
 tags:
   - framework
   - podcast

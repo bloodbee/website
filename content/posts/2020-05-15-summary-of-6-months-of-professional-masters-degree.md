@@ -1,13 +1,13 @@
 ---
 template: post
 title: Summary of two years in a Professional Master's degree
-slug: /summary-2-years-pro-master-degree
+slug: "/blog/summary-2-years-pro-master-degree"
 socialImage: /media/movable-type.jpg
 draft: false
-date: 2021-09-11T12:26:57.639Z
+date: "2021-09-11T12:26:57.639Z"
 description: Summary of two years in Epitech (European Institute of Technology)
   school, one of the most renoun in France for IT and computer science.
-category: post
+category: "Learning"
 tags:
   - epitech
   - computer science
