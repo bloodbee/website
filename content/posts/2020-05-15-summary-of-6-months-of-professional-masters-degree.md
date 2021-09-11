@@ -14,6 +14,9 @@ tags:
   - IT
   - learning
   - school
+  - work-study
+  - devOps
+  - AI
 ---
 Good morning, dear readers,
 
