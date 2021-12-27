@@ -14,6 +14,10 @@ description: Doctor Philippe Galtier, general practitioner. Practices
 category: Web development
 tags:
   - vuejs
+  - tailwindcss
+  - netlify
+  - frontend
+  - from scratch
 ---
 In 2020, the general council of the mececin allowed health practitioners to have more visibility on the internet by creating a website that highlighted their specialty and activity.
 
