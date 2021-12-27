@@ -8,7 +8,7 @@ type Props = {
   edges: Edges
 };
 
-const GetListLink= (edge)  => {
+const GetListLink = (edge)  => {
   if (edge.node.frontmatter.template === 'post') {
     return '/posts';
   } else if (edge.node.frontmatter.template === 'project') {
