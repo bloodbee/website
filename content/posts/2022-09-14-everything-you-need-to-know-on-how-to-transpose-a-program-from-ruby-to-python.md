@@ -1,7 +1,7 @@
 ---
 template: post
-title: Guide on how to transpose a program from ruby to python
-slug: guide-how-to-transpose-program-ruby-to-python
+title: Guide on how to transpose a program from ruby to python - Part 1
+slug: guide-how-to-transpose-program-ruby-to-python-part-1
 socialImage: /media/screenshot-from-2022-07-13-09-41-23.png
 draft: true
 date: 2022-09-14T07:32:39.912Z
@@ -58,21 +58,85 @@ Let's dive deep into the code, I will show you what's possible in Ruby, and what
 
 ### Classes
 
-#### Modules
+#### Declaration
 
-In Ruby, your class needs to be be incorporated into a module:
+In Ruby:
 
 ```ruby
-module Program
-  class Main
+class Main
   # ...
-  end
 end
 ```
 
-In Python there is no need for that, just declare your class.
+In Python:
 
 ```python
 class Main:
   # ...
+```
+
+#### Initialization
+
+In Ruby:
+
+```ruby
+class Main
+  def initialize(var1, var2)
+    # ...
+  end
+end
+```
+
+In Python:
+
+```python
+class Main:
+  def __init__(self, var1, var2):
+    # ...
+```
+
+#### Attributes and class attributes
+
+Attributes are useful to store data accros our object and during all its lifecycle.\
+Class attributes will be more appropriate if you need to store constants, tracking data across all instances or set default values.
+
+In Ruby:
+
+```ruby
+class Main:
+  attr_reader :var1, :var2 # attributes
+  attr_writer :var3 # attributes
+  VAR4 = ['Hello World'] # class atribute
+  
+  def initialize(var1, var2, var3)
+    @var1 = var1
+    @var2 = var2
+  end
+  
+  def set_3(value)
+    @var3 = value
+  end
+  
+  def add_var4(value)
+    VAR4.push(value)
+  end
+end
+```
+
+In Python:
+
+```python
+class Main:
+  VAR4 = ['Hello World'] # class attributes
+  
+  def __init__(self, var1, var2):
+    self.var1 = var1 # attributes
+    self.var2 = var2 # attributes
+    self.var3 = None # attributes
+    
+  def set_3(self, value):
+    self.var3 = value
+    
+  def add_var4(self, value):
+    Main.VAR4.append(value)
 ```
