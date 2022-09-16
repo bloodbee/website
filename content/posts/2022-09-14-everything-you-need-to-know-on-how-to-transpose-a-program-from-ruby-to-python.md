@@ -56,6 +56,8 @@ This list is not exhaustive, however it summarizes well the different points of 
 
 Let's dive deep into the code, I will show you what's possible in Ruby, and what does it look like in Python. <i class="color-success fas fa-face-smile-wink"></i>
 
+In this first part, I will speak about *classes*, *methods*, *access modifiers* and *hash/dict.*
+
 ### Classes
 
 #### Declaration
@@ -63,8 +65,10 @@ Let's dive deep into the code, I will show you what's possible in Ruby, and what
 In Ruby:
 
 ```ruby
-class Main
-  # ...
+module MyModule
+  class Main
+    # ...
+  end
 end
 ```
 
@@ -80,9 +84,11 @@ class Main:
 In Ruby:
 
 ```ruby
-class Main
-  def initialize(var1, var2)
-    # ...
+module MyModule
+  class Main
+    def initialize(var1, var2)
+      # ...
+    end
   end
 end
 ```
@@ -103,22 +109,24 @@ Class attributes will be more appropriate if you need to store constants, tracki
 In Ruby:
 
 ```ruby
-class Main:
-  attr_reader :var1, :var2 # attributes
-  attr_writer :var3 # attributes
-  VAR4 = ['Hello World'] # class atribute
-  
-  def initialize(var1, var2, var3)
-    @var1 = var1
-    @var2 = var2
-  end
-  
-  def set_3(value)
-    @var3 = value
-  end
-  
-  def add_var4(value)
-    VAR4.push(value)
+module MyModule
+  class Main
+    attr_reader :var1, :var2 # attributes
+    attr_writer :var3 # attributes
+    VAR4 = ['Hello World'] # class atribute
+
+    def initialize(var1, var2, var3)
+      @var1 = var1
+      @var2 = var2
+    end
+
+    def set_3(value)
+      @var3 = value
+    end
+
+    def add_var4(value)
+      VAR4.push(value)
+    end
   end
 end
 ```
@@ -139,4 +147,58 @@ class Main:
     
   def add_var4(self, value):
     Main.VAR4.append(value)
+```
+
+#### Access modifiers
+
+Python uses ‘_’ (underscore) symbol to determine the access control for a specific data member or a member function of a class. Access specifiers in Python have an important role to play in securing data from unauthorized access and in preventing it from being exploited.
+
+Ruby prefers to use *keywords* to specify what is private, public or protected.
+
+(If you want a reminder about the access modifiers, check it here: <https://www.toppr.com/guides/computer-science/introduction-to-c/data-types-variables-and-constants/access-modifiers/>)
+
+Let's dive into the code, in Ruby we have for example:
+
+```ruby
+module MyModule
+  class Main
+    # everything below is public
+    attr_writer :my_public_variable
+    def initialize
+      # ...
+    end
+    
+    private # everything below is private
+    
+    attr_reader :my_private_variable
+    def private_method
+      # ...
+    end
+    
+    protected # everything below is protected
+    
+    attr_accesssor :my_protected_variable
+    def protected_method
+      # ...
+    end
+  end
+end
+```
+
+In Python:
+
+```python
+class Main:
+  
+  def __init__(self): # always public
+    # ...
+    self.my_public_variable = 'Hello'
+    self.__my_private_variable = 'Private, sorry!'
+    self._my_protected_variable = 'Protected, duh.'
+  
+  def __private_method(self):
+    # ...
+    
+  def _protected_method(self):
+    # ...
 ```
