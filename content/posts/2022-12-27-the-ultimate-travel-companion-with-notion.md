@@ -20,6 +20,9 @@ tags:
   - paid product
   - template
 ---
+
+<blockquote>Notion is a productivity and organization tool that allows users to create and manage a variety of digital content, including notes, tasks, wikis, and databases. It is designed to help individuals and teams stay organized, collaborate, and get work done more efficiently. With Notion, users can create customized workspaces for their projects and organize their information in a way that makes sense to them. It also offers a range of features, including the ability to integrate with other tools and services, search and filter information, and collaborate with others in real-time. Overall, Notion is a flexible and powerful tool that can be used for a variety of purposes, including project management, note-taking, and document management.</blockquote>
+
 Do you dream of going on a trip, but the idea of planning everything is already stressing you out? Don't worry any more! Here's the perfect solution for you: **a travel planner template**.
 
 This template will allow you to organize everything from A to Z, from searching for your destination to preparing your itinerary and booking your accommodation and transport. No need to get bogged down in dozens of spreadsheets or scattered notes, everything will be _centralized_ and _easily accessible_ in a single document.
