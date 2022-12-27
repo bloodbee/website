@@ -125,4 +125,4 @@ In summary, this travel planner template is a practical and effective tool for p
 
 In summary, the travel planner template we have presented is a practical and effective tool for planning your trip in an organised and stress-free way. It allows you to manage everything in one place, customize your travel plan to your needs and easily share your plan with your loved ones.
 
-If you are interested in this template and would like to know more, please [click here to go to the purchase page](https://notioncanvatemplates.gumroad.com/l/ultimatetravel-notion). We hope this template will help you plan your next trip with ease and peace of mind. **Enjoy your trip!**
+If you are interested in this template and would like to know more, please [click here to go to the purchase page](https://notioncanvatemplates.gumroad.com/l/ultimatetravel-notion). We hope this template will help you plan your next trip with ease and peace of mind. **Enjoy your trip!** <i class="fas fa-plane"></i>
