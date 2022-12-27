@@ -18,6 +18,7 @@ tags:
   - planner
   - companion
   - paid product
+  - template
 ---
 Do you dream of going on a trip, but the idea of planning everything is already stressing you out? Don't worry any more! Here's the perfect solution for you: **a travel planner template**.
 
