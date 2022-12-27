@@ -96,7 +96,7 @@ I suggest you to choose theses options :
 * Standard plan at 5$/mo.
 * A datacenter depending on your region.
 * SSH Keys authentification with your newly added ssh key.
-* In **Select additional options **select** User data**
+* In **Select additional options _select User data_**
 
 When you choose User data as an option, Digital Ocean allow to use a cloud script to generate your new droplet.
 
