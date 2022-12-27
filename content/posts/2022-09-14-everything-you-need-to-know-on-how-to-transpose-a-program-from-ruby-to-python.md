@@ -1,12 +1,12 @@
 ---
 template: post
 title: Guide on how to transpose a program from ruby to python - Part 1
-slug: guide-how-to-transpose-program-ruby-to-python-part-1
+slug: /blog/guide-how-to-transpose-program-ruby-to-python-part-1
 socialImage: /media/screenshot-from-2022-07-13-09-41-23.png
 draft: true
 date: 2022-09-14T07:32:39.912Z
 description: Blog article on how to transpose a program from ruby to python.
-category: software
+category: Software
 tags:
   - software
   - language

@@ -79,8 +79,6 @@ Questions that a company must ask itself :
 
   ![manipulation matrice](/media/manipulation-matrice.png "Manipulation Matrice from Nir Eyal")
 
-
-
 #### 6) Data collection and behavioral analysis
 
 This is done by observing the frustrations <i class="color-warning fas fa-sad-tear"></i> and motivations <i class="color-warning fas fa-smile"></i> of the future users. They use specifics sentences to describe their F & M.
