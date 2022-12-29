@@ -18,7 +18,7 @@ const Menu = ({ menu }: Props) => (
           <Link
             to={item.path}
             className={styles['menu__list-item-link']}
-            activeClassName={styles['menu__list-item-link--active']}
+            activeclassname={styles['menu__list-item-link--active']}
           >
             {item.label}
           </Link>
@@ -29,7 +29,7 @@ const Menu = ({ menu }: Props) => (
           href="media/CVEN.pdf" 
           target="_blank"
           className={styles['menu__list-item-link']}
-          activeClassName={styles['menu__list-item-link--active']}
+          activeclassname={styles['menu__list-item-link--active']}
         >
           Curriculum Vitae
         </a>

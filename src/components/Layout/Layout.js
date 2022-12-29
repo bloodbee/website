@@ -1,6 +1,8 @@
 // @flow strict
 import React from 'react';
 import Helmet from 'react-helmet';
+import { Person } from "schema-dts";
+import { helmetJsonLdProp } from "react-schemaorg";
 import type { Node as ReactNode } from 'react';
 import { useSiteMetadata } from '../../hooks';
 import styles from './Layout.module.scss';
@@ -24,7 +26,22 @@ const Layout = ({
 
   return (
     <div className={styles.layout}>
-      <Helmet>
+      <Helmet
+        script={[
+          helmetJsonLdProp<Person>({
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "name": "Mathieu Dufour",
+            "alternateName": "Bloodbee",
+            "url": "https://bloodbee.space",
+            "sameAs": [
+              "https://www.facebook.com/mathieudufour.fr",
+              "https://twitter.com/Mathieu_Dufour",
+              "https://www.linkedin.com/in/dufourmathieu/"
+            ]
+          })
+        ]}
+      >
         <html lang="en" />
         <title>{title}</title>
         <meta name="language" content="en-US" />
@@ -40,7 +57,8 @@ const Layout = ({
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={metaImageUrl} />
-        <meta property="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Mathieu_Dufour" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
