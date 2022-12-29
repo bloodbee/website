@@ -21,7 +21,9 @@ tags:
   - template
 ---
 
-<blockquote>Notion is a productivity and organization tool that allows users to create and manage a variety of digital content, including notes, tasks, wikis, and databases. It is designed to help individuals and teams stay organized, collaborate, and get work done more efficiently. With Notion, users can create customized workspaces for their projects and organize their information in a way that makes sense to them. It also offers a range of features, including the ability to integrate with other tools and services, search and filter information, and collaborate with others in real-time. Overall, Notion is a flexible and powerful tool that can be used for a variety of purposes, including project management, note-taking, and document management.</blockquote>
+<blockquote>Notion is a productivity and organization tool that helps users create notes, tasks, wikis, and databases in a customizable workspace. With features like real-time collaboration and the ability to embed content from other sources, Notion is perfect for personal organization, project management, and team work. Available on the web and as a mobile app, Notion is a powerful tool for boosting productivity and staying organized.</blockquote>
+
+_[Find more about Notion here](https://www.notion.so/)._
 
 Do you dream of going on a trip, but the idea of planning everything is already stressing you out? Don't worry any more! Here's the perfect solution for you: **a travel planner template**.
 
@@ -33,7 +35,7 @@ If you want more information, [please visit this website](https://notioncanvatem
 
 ## I. How it can help you plan your trip?
 
-The travel planner template we offer includes many features to help you plan your trip in an efficient and organised way. Here are some of the main features included in this template.
+The travel planner template I offer includes many features to help you plan your trip in an efficient and organised way. Here are some of the main features included in this template.
 
 * An efficient division of the template elements into different pages, so that you can always find the information you need for your journey.
 * An **Show all** tab that allows you to see all the details of your trip at a glance, including departure and return dates, estimated costs and planned activities.
@@ -127,6 +129,8 @@ In summary, this travel planner template is a practical and effective tool for p
 
 ## IV. Why is this template the ideal solution for planning your next trip with ease and peace of mind?
 
-In summary, the travel planner template we have presented is a practical and effective tool for planning your trip in an organised and stress-free way. It allows you to manage everything in one place, customize your travel plan to your needs and easily share your plan with your loved ones.
+In summary, the travel planner template I have presented is a practical and effective tool for planning your trip in an organised and stress-free way. It allows you to manage everything in one place, customize your travel plan to your needs and easily share your plan with your loved ones.
 
-If you are interested in this template and would like to know more, please [click here to go to the purchase page](https://notioncanvatemplates.gumroad.com/l/ultimatetravel-notion). We hope this template will help you plan your next trip with ease and peace of mind. **Enjoy your trip!** <i class="fas fa-plane"></i>
+I hope this template will help you plan your next holidays with ease and peace of mind. **Enjoy your trip!** <i class="fas fa-plane"></i>
+
+<a href="https://notioncanvatemplates.gumroad.com/l/ultimatetravel-notion" target="_blank" class="call-to-action">Discover the template</button>

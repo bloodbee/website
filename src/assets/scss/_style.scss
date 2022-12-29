@@ -45,3 +45,23 @@ blockquote {
 .grid-images img {
   width: 100%;
 }
+
+p:has(> .call-to-action) {
+  display: flex;
+}
+
+a.call-to-action {
+  display: inline-block;
+  height: 2.1875rem;
+  padding: 0 1.5rem;
+  line-height: 2.1875rem;
+  border: 1px solid $color-secondary;
+  text-decoration: none !important;
+  border-radius: 1.25rem;
+  color: $color-base;
+
+  &:hover {
+    background-color: $color-secondary;
+    color: white;
+  }
+}
