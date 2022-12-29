@@ -21,11 +21,11 @@ tags:
   - template
 ---
 
-<blockquote>Notion is a productivity and organization tool that helps users create notes, tasks, wikis, and databases in a customizable workspace. With features like real-time collaboration and the ability to embed content from other sources, Notion is perfect for personal organization, project management, and team work. Available on the web and as a mobile app, Notion is a powerful tool for boosting productivity and staying organized.</blockquote>
+<blockquote>Notion is a productivity and organization tool that helps users create notes, tasks, wikis, and databases in a customisable workspace. With features like real-time collaboration and the ability to embed content from other sources, Notion is perfect for personal organization, project management, and team work. Available on the web and as a mobile app, Notion is a powerful tool for boosting productivity and staying organized.</blockquote>
 
 _[Find more about Notion here](https://www.notion.so/)._
 
-Do you dream of going on a trip, but the idea of planning everything is already stressing you out? Don't worry any more! Here's the perfect solution for you: **a travel planner template**.
+Do you dream of going on a trip, but the idea of planning everything is already stressing you out? Don't worry any more! Here's the perfect solution for you: **a travel planner template**. This template is like a travel app, but fully integrated into a Notion page.
 
 This template will allow you to organize everything from A to Z, from searching for your destination to preparing your itinerary and booking your accommodation and transport. No need to get bogged down in dozens of spreadsheets or scattered notes, everything will be _centralized_ and _easily accessible_ in a single document.
 
@@ -39,12 +39,12 @@ The travel planner template I offer includes many features to help you plan your
 
 * An efficient division of the template elements into different pages, so that you can always find the information you need for your journey.
 * An **Show all** tab that allows you to see all the details of your trip at a glance, including departure and return dates, estimated costs and planned activities.
-* An **Itinerary** page that allows you to plan each stage of your trip, including the places you want to visit, accommodation and transport.
+* An **Itinerary** page that allows you to plan each stage of your trip, including the places you want to visit, accommodation and transport. You also have an integrated google map to visualize your trip.
 * A **Budget** page that allows you to track your expenses and plan your travel budget in detail, including the costs of airfare, hotels, meals, activities and souvenirs.
 * A **Documents** page that allows you to store all important documents for your trip, such as airline tickets, hotel confirmations and travel insurance.
 * Other pages included are a **diary**, **things to visit** and a list of **accommodations**.
 
-By using these different tabs and pages, you will be able to plan your trip in a complete and organised way, without forgetting anything. What's more, this template is fully customizable, allowing you to adapt it to your needs and travel style. I'll explain how to use this template to create your own personalized travel planner in the next part of our article.
+By using these different tabs and pages, you will be able to plan your trip in a complete and organised way, without forgetting anything. What's more, this template is fully customisable, allowing you to adapt it to your needs and travel style. I'll explain how to use this template to create your own personalized travel planner in the next part of our article.
 
 ## II. How do you use this template to create your own personalized travel organizer?
 
@@ -117,7 +117,7 @@ Finally, an explanatory guide is included in this template, so that you can get 
 
 ## III. Advantages of the template over other travel planning methods?
 
-The travel planner template offered has many advantages over other travel planning methods.
+The Notion template has many advantages over other travel planning methods.
 
 First of all, this template allows you to plan everything in one place. Instead of having to use several different tools or applications to book your plane tickets, hotel, and plan your itinerary and budget, you can manage everything in one place with this template. This saves you time and allows you to have everything in front of you at a glance.
 
