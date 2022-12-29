@@ -6,19 +6,9 @@
   YARN_FLAGS = "--no-ignore-optional"
 
 [[plugins]]
-  package = "netlify-plugin-submit-sitemap"
+  package = "@netlify/plugin-sitemap"
 
 	[plugins.inputs]
-
-	# The base url of your site (optional, default = main URL set in Netlify)
+	buildDir = "public"
+	trailingSlash = true
 	baseUrl = "https://bloodbee.space"
-
-	# Path to the sitemap URL (optional, default = /sitemap.xml)
-	sitemapPath = "/sitemap.xml"
-
-	# Enabled providers to submit sitemap to (optional, default = 'google', 'bing', 'yandex'). Possible providers are currently only 'google', 'bing', 'yandex'.
-	providers = [
-		"google",
-		"bing",
-		"yandex"
-	]
