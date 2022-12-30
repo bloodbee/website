@@ -199,5 +199,7 @@ export default {
     "gatsby-plugin-catch-links",
     "gatsby-plugin-optimize-svgs",
     "gatsby-plugin-sass",
+    "gatsby-plugin-netlify",
+    "@netlify/plugin-gatsby"
   ],
 };

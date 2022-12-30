@@ -50,6 +50,7 @@
   "dependencies": {
     "@alxshelepenok/diesel": "^1.0.618",
     "@alxshelepenok/diesel-extensions": "^1.0.220",
+    "@netlify/plugin-gatsby": "^3.5.0",
     "@sentry/gatsby": "^7.28.1",
     "@sentry/tracing": "^7.28.1",
     "abab": "^2.0.6",
@@ -62,6 +63,7 @@
     "gatsby-plugin-google-gtag": "^4.25.0",
     "gatsby-plugin-image": "^2.25.0",
     "gatsby-plugin-manifest": "^4.25.0",
+    "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-plugin-offline": "^5.25.0",
     "gatsby-plugin-optimize-svgs": "^1.0.5",
     "gatsby-plugin-sass": "^5.25.0",
