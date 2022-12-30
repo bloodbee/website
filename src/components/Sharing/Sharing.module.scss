@@ -8,168 +8,168 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 1px solid #e6e6e6;
+  border: 1px solid var(--color-button-border);
   border-radius: 1.25rem;
-  margin-top: 10px;
+  margin-top: 30px;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
   min-width: 350px;
 
-  .resp-sharing-button__link,
-  .resp-sharing-button__icon {
+  .buttonLink,
+  .buttonIcon {
     display: inline-block
   }
 
-  .resp-sharing-button__link {
+  .buttonLink {
     text-decoration: none;
     color: #fff;
     margin: 0.5em
   }
 
-  .resp-sharing-button {
+  .button {
     border-radius: 5px;
     transition: 25ms ease-out;
     padding: 0.5em 0.75em;
     font-family: Helvetica Neue,Helvetica,Arial,sans-serif
   }
 
-  .resp-sharing-button__icon svg {
+  .buttonIcon svg {
     width: 1em;
     height: 1em;
     margin-right: 0.4em;
     vertical-align: top
   }
 
-  .resp-sharing-button--small svg {
+  .buttonSmall svg {
     margin: 0;
     vertical-align: middle
   }
 
   /* Non solid icons get a stroke */
-  .resp-sharing-button__icon {
+  .buttonIcon {
     stroke: #fff;
     fill: none
   }
 
   /* Solid icons get a fill */
-  .resp-sharing-button__icon--solid,
-  .resp-sharing-button__icon--solidcircle {
+  .buttonIconSolid,
+  .buttonIconSolidcircle {
     fill: #fff;
     stroke: none
   }
 
-  .resp-sharing-button--twitter {
+  .buttonTwitter {
     background-color: #55acee;
     border-color: #55acee;
   }
 
-  .resp-sharing-button--twitter:hover,
-  .resp-sharing-button--twitter:active {
-    background-color: $color-base;
-    border-color: $color-base;
+  .buttonTwitter:hover,
+  .buttonTwitter:active {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
   }
 
-  .resp-sharing-button--pinterest {
+  .buttonPinterest {
     background-color: #bd081c
   }
 
-  .resp-sharing-button--pinterest:hover {
-    background-color: $color-base;
+  .buttonPinterest:hover {
+    background-color: var(--color-secondary);
   }
 
-  .resp-sharing-button--facebook {
+  .buttonFacebook {
     background-color: #3b5998;
     border-color: #3b5998;
   }
 
-  .resp-sharing-button--facebook:hover,
-  .resp-sharing-button--facebook:active {
-    background-color: $color-base;
-    border-color: $color-base;
+  .buttonFacebook:hover,
+  .buttonFacebook:active {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
   }
 
-  .resp-sharing-button--tumblr {
+  .buttonTumblr {
     background-color: #35465C
   }
 
-  .resp-sharing-button--tumblr:hover {
-    background-color: $color-base;
+  .buttonTumblr:hover {
+    background-color: var(--color-secondary);
   }
 
-  .resp-sharing-button--reddit {
+  .buttonReddit {
     background-color: #ff4301;
     border-color: #ff4301;
   }
 
-  .resp-sharing-button--reddit:hover,
-  .resp-sharing-button--reddit:active {
-    background-color: $color-base;
-    border-color: $color-base;
+  .buttonReddit:hover,
+  .buttonReddit:active {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
   }
 
-  .resp-sharing-button--google {
+  .buttonGoogle {
     background-color: #dd4b39;
   }
 
-  .resp-sharing-button--google:hover {
-    background-color: $color-base;
+  .buttonGoogle:hover {
+    background-color: var(--color-secondary);
   }
 
-  .resp-sharing-button--linkedin {
+  .buttonLinkedin {
     background-color: #0077b5;
     border-color: #0077b5;
   }
 
-  .resp-sharing-button--linkedin:hover,
-  .resp-sharing-button--linkedin:active {
-    background-color: $color-base;
-    border-color: $color-base;
+  .buttonLinkedin:hover,
+  .buttonLinkedin:active {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
   }
 
-  .resp-sharing-button--email {
+  .buttonEmail {
     background-color: #777777;
     border-color: #777777;
   }
 
-  .resp-sharing-button--email:hover,
-  .resp-sharing-button--email:active {
-    background-color: $color-base;
-    border-color: $color-base;
+  .buttonEmail:hover,
+  .buttonEmail:active {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
   }
 
-  .resp-sharing-button--xing {
+  .buttonXing {
     background-color: #1a7576;
   }
 
-  .resp-sharing-button--xing:hover {
-    background-color: $color-base;
+  .buttonXing:hover {
+    background-color: var(--color-secondary);
   }
 
-  .resp-sharing-button--whatsapp {
+  .buttonWhatsapp {
     background-color: #25D366;
     border-color: #25D366;
   }
   
-  .resp-sharing-button--whatsapp:hover,
-  .resp-sharing-button--whatsapp:active {
-    background-color: $color-base;
-    border-color: $color-base;
+  .buttonWhatsapp:hover,
+  .buttonWhatsapp:active {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
   }
 
-  .resp-sharing-button--hackernews {
+  .buttonHackernews {
   background-color: #FF6600;
   }
-  .resp-sharing-button--hackernews:hover, .resp-sharing-button--hackernews:focus {
-    background-color: $color-base;
+  .buttonHackernews:hover, .buttonHackernews:focus {
+    background-color: var(--color-secondary);
   }
 
-  .resp-sharing-button--vk {
+  .buttonVk {
     background-color: #507299;
   }
 
-  .resp-sharing-button--vk:hover {
-    background-color: $color-base;
+  .buttonVk:hover {
+    background-color: var(--color-secondary);
   }
 
 }

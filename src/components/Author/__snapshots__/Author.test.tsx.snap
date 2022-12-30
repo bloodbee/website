@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Author renders correctly 1`] = `
+<div>
+  <p>
+    Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.
+  </p>
+</div>
+`;
