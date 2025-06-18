@@ -4,6 +4,8 @@ const routes = Object.freeze({
   tagsListRoute: "/tags",
   notFoundRoute: "/404",
   tagRoute: "/tag",
+  postsRoute: "/posts",
+  projectsRoute: "/projects",
   indexRoute: "/",
 });
 

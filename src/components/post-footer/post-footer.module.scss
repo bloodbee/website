@@ -2,7 +2,14 @@
 @use "src/assets/styles/variables";
 
 .post-footer {
+  border-top: 1px solid hsl(var(--color-border));
+
   .date {
     font-style: italic;
+  }
+
+
+  a {
+    color: hsl(var(--color-primary));
   }
 }

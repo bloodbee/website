@@ -11,7 +11,7 @@ interface PagesQueryResult {
 const pagesQuery = async (graphql: CreatePagesArgs["graphql"]) => {
   const result = await graphql<PagesQueryResult>(`
     {
-      allMarkdownRemark(filter: { frontmatter: { draft: { ne: true } } }) {
+      allMarkdownRemark(filter: { frontmatter: { draft: { ne: true }, template: { in: ["page", "post", "project"] } } }) {
         edges {
           node {
             frontmatter {

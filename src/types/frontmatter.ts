@@ -7,6 +7,9 @@ interface Frontmatter {
   description?: string;
   tags?: Array<string>;
   socialImage?: { publicURL: string };
+  dateCreation?: string;
+  website?: string;
+  customer?: string;
 }
 
 export { type Frontmatter };

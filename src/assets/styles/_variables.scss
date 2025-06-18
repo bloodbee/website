@@ -10,6 +10,7 @@ $dark-color-palette: (
   primary-foreground: hsl(240, 4%, 98%),
   secondary: hsl(240, 4%, 17%),
   secondary-foreground: hsl(240, 4%, 98%),
+  link: hsl(235, 56%, 53%),
   accent: hsl(240, 4%, 17%),
   accent-foreground: hsl(240, 4%, 98%),
   destructive: hsl(342, 100%, 74%),
@@ -28,6 +29,7 @@ $light-color-palette: (
   primary-foreground: hsl(240, 4%, 98%),
   secondary: hsl(240, 6%, 96%),
   secondary-foreground: hsl(240, 2%, 17%),
+  link: hsl(235, 56%, 53%),
   accent: hsl(240, 6%, 96%),
   accent-foreground: hsl(240, 2%, 17%),
   destructive: hsl(342, 100%, 47%),
@@ -46,11 +48,11 @@ $typography-font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Robot
 $button-height: 40px;
 $button-border-radius: 20px;
 
-$layout-post-single-width: 945px;
+$layout-post-single-width: 1105px;
 $layout-post-width: $layout-post-single-width - 305px;
 
 $layout-gap: 30px;
-$layout-width: 1070px;
+$layout-width: 60vw;
 $layout-breakpoint-sm: 685px;
 $layout-breakpoint-md: 960px;
 $layout-breakpoint-lg: 1100px;

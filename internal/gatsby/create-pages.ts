@@ -5,6 +5,7 @@ import { templates } from "./constants/templates";
 import { tagsQuery } from "./queries/tags-query";
 import { pagesQuery } from "./queries/pages-query";
 import { postsQuery } from "./queries/posts-query";
+import { projectsQuery } from "./queries/projects-query";
 import { metadataQuery } from "./queries/metadata-query";
 import { categoriesQuery } from "./queries/categories-query";
 import { toKebabCase } from "../../src/utils/to-kebab-case";
@@ -24,6 +25,12 @@ const getPaginationPath = (basePath: string, page: number): string =>
 
 const createPages: GatsbyNode["createPages"] = async ({ graphql, actions }) => {
   const { createPage } = actions;
+
+  // createPage({
+  //   path: routes.indexRoute,
+  //   component: templates.indexTemplate,
+  //   context: {},
+  // });
 
   createPage({
     path: routes.notFoundRoute,
@@ -58,6 +65,12 @@ const createPages: GatsbyNode["createPages"] = async ({ graphql, actions }) => {
       createPage({
         path: node?.frontmatter?.slug || node.fields.slug,
         component: templates.postTemplate,
+        context: { slug: node.fields.slug },
+      });
+    } else if (node?.frontmatter?.template === "project" && node?.fields?.slug) {
+      createPage({
+        path: node?.frontmatter?.slug || node.fields.slug,
+        component: templates.projectTemplate,
         context: { slug: node.fields.slug },
       });
     }
@@ -127,20 +140,38 @@ const createPages: GatsbyNode["createPages"] = async ({ graphql, actions }) => {
     }
   });
 
-  const path = routes.indexRoute;
-  const template = templates.indexTemplate;
+  // POST
+  const postsPath = routes.postsRoute;
+  const postsTemplate = templates.postsTemplate;
   const posts = await postsQuery(graphql);
-  const total = Math.ceil((posts?.edges?.length ?? 0) / postsLimit);
+  const postsTotal = Math.ceil((posts?.edges?.length ?? 0) / postsLimit);
 
-  for (let page = 0; page < total; page += 1) {
+  for (let page = 0; page < postsTotal; page += 1) {
     createWithPagination({
       limit: postsLimit,
-      template,
-      total,
+      template: postsTemplate,
+      total: postsTotal,
       page,
-      path,
+      path: postsPath,
     });
   }
+
+  // TEMPLATE
+  const templatesPath = routes.projectsRoute;
+  const projectsTemplate = templates.projectsTemplate;
+  const projects = await projectsQuery(graphql);
+  const projectsTotal = Math.ceil((projects?.edges?.length ?? 0) / postsLimit);
+
+  for (let page = 0; page < projectsTotal; page += 1) {
+    createWithPagination({
+      limit: postsLimit,
+      template: projectsTemplate,
+      total: projectsTotal,
+      page,
+      path: templatesPath,
+    });
+  }
+
 };
 
 export { createPages };

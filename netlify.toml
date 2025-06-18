@@ -1,0 +1,59 @@
+[build]
+  publish = "public"
+  command = "gatsby build"
+
+[context.production]
+  command = "mv robots-production.txt robots.txt"
+
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+	[plugins.inputs]
+	buildDir = "public"
+	trailingSlash = true
+	baseUrl = "https://bloodbee.space"
+
+[[redirects]]
+  from = "/blog/travel-technological-retreat-15-month"
+  to = "/posts/2019-08-01--travel-technological-retreat-15-months"
+  status = 301
+
+[[redirects]]
+  from = "/blog/how-to-deploy-nodejs-digital-ocean"
+  to = "/posts/2019-12-16--easy-deploy-nodejs-app-digital-ocean"
+  status = 301
+
+[[redirects]]
+  from = "/blog/summary-2-years-pro-master-degree"
+  to = "/posts/2020-05-15--summary-2-years-professional-masters-degree"
+  status = 301
+
+[[redirects]]
+  from = "/blog/product-creation-framework"
+  to = "/posts/2020-12-16--product-creation-framework"
+  status = 301
+
+[[redirects]]
+  from = "/blog/ultimate-travel-companion-notion-template"
+  to = "/posts/2022-12-27--ultimate-travel-companion-notion"
+  status = 301
+
+[[redirects]]
+  from = "/projects/use-awesome-functionnalities-for-your-multiple-environment-algolia"
+  to = "/projects/algolia-extended"
+  status = 301
+
+[[redirects]]
+  from = "/projects/hire-private-car-with-driver-from-airport-to-hotel"
+  to = "/projects/navette-facile"
+  status = 301
+
+[[redirects]]
+  from = "/projects/web-agency-specialized-in-chatbot-creation--the-bot-agency"
+  to = "/projects/the-bot-agency"
+  status = 301
+
+[[redirects]]
+  from = "/projects/docteur-galtier-general-practitioner-aveyron"
+  to = "/projects/docteur-galtier-general-practitioner"
+  status = 301

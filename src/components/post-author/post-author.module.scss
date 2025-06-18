@@ -8,13 +8,6 @@
   @include mixins.line-height(1);
   @include mixins.margin-top(1);
   @include mixins.margin-bottom(2);
-
-  .description {
-    .x {
-      display: block;
-      text-decoration: underline;
-    }
-  }
 }
 
 @include mixins.breakpoint-sm {

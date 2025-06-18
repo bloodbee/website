@@ -24,6 +24,7 @@ const useSiteMetadata = () => {
           title
           copyright
           description
+          disqusShortname
         }
       }
     }

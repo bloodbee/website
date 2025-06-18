@@ -53,7 +53,7 @@ export const query = graphql`
       filter: {
         frontmatter: {
           tags: { in: [$group] }
-          template: { eq: "post" }
+          template: { in: ["post", "project"] }
           draft: { ne: true }
         }
       }
@@ -71,6 +71,9 @@ export const query = graphql`
             category
             description
             slug
+            socialImage {
+              publicURL
+            }
           }
         }
       }

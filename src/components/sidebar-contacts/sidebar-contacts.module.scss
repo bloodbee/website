@@ -37,6 +37,8 @@
         &:hover,
         &:focus {
           color: hsl(var(--color-primary));
+          transform: scale(1.2) !important;
+
         }
       }
     }
