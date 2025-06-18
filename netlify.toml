@@ -2,9 +2,6 @@
   publish = "public"
   command = "gatsby build"
 
-[context.production]
-  command = "mv robots-production.txt robots.txt"
-
 [[plugins]]
   package = "@netlify/plugin-sitemap"
 
