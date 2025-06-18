@@ -23,10 +23,11 @@ const TagTemplate: FC<TagTemplateProps> = ({ data, pageContext }) => {
   const { prevPagePath, nextPagePath, hasPrevPage, hasNextPage } = pagination;
   const { edges } = data.allMarkdownRemark;
 
+  const title = `Tag: ${group}`;
   return (
     <Layout>
       <Sidebar />
-      <Page title={group}>
+      <Page title={title}>
         <Feed edges={edges} />
         <Pagination
           prevPagePath={prevPagePath}

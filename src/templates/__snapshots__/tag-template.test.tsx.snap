@@ -445,7 +445,7 @@ exports[`TagTemplate renders correctly 1`] = `
             {
               "$$typeof": Symbol(react.test.json),
               "children": [
-                "Typography",
+                "Tag: Typography",
               ],
               "props": {
                 "className": undefined,
