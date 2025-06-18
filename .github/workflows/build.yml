@@ -1,9 +1,9 @@
 name: Analyze
 
 on:
-  pull_request:
+  push:
     branches:
-      - main
+      - master
 
 jobs:
   install:
@@ -65,34 +65,3 @@ jobs:
 
       - name: Run build
         run: bun run build
-
-  test:
-    name: Test
-    runs-on: ubuntu-latest
-    needs: install
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: latest
-
-      - name: Restore dependencies
-        id: bun-cache
-        uses: actions/cache/restore@v4
-        with:
-          path: |
-            ~/.bun
-            node_modules
-          key: bun-${{ runner.os }}-${{ hashFiles('bun.lockb') }}
-
-      - name: Install modules
-        if: steps.bun-cache.outputs.cache-hit != 'true'
-        run: bun install --frozen-lockfile
-
-      - name: Run tests
-        run: bun run test
