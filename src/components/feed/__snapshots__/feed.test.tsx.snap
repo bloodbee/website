@@ -94,7 +94,15 @@ exports[`Feed renders correctly 1`] = `
         {
           "$$typeof": Symbol(react.test.json),
           "children": [
-            "Read",
+            {
+              "$$typeof": Symbol(react.test.json),
+              "children": null,
+              "props": {
+                "alt": "Perfecting the Art of Perfection",
+                "src": "",
+              },
+              "type": "img",
+            },
           ],
           "props": {
             "aria-current": undefined,
@@ -201,7 +209,15 @@ exports[`Feed renders correctly 1`] = `
         {
           "$$typeof": Symbol(react.test.json),
           "children": [
-            "Read",
+            {
+              "$$typeof": Symbol(react.test.json),
+              "children": null,
+              "props": {
+                "alt": "Johannes Gutenberg: The Birth of Movable Type",
+                "src": "",
+              },
+              "type": "img",
+            },
           ],
           "props": {
             "aria-current": undefined,
@@ -306,7 +322,15 @@ exports[`Feed renders correctly 1`] = `
         {
           "$$typeof": Symbol(react.test.json),
           "children": [
-            "Read",
+            {
+              "$$typeof": Symbol(react.test.json),
+              "children": null,
+              "props": {
+                "alt": "Humane Typography in the Digital Age",
+                "src": "",
+              },
+              "type": "img",
+            },
           ],
           "props": {
             "aria-current": undefined,

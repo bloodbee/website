@@ -24,6 +24,6 @@ describe("Project", () => {
   test("buttons is rendered correctly and exists", () => {
     const props = { project: mocks.markdownRemark };
     const el = renderWithCoilProvider(<Project {...props} />);
-    expect(el.getByText("All Articles")).toBeInTheDocument();
+    expect(el.getByText("All Projects")).toBeInTheDocument();
   });
 });

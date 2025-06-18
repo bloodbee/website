@@ -7,7 +7,7 @@ exports[`PostFooter renders correctly 1`] = `
     {
       "$$typeof": Symbol(react.test.json),
       "children": [
-        "Published",
+        "Published :",
         " ",
         "Sep 1, 2016",
       ],

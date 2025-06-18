@@ -1,6 +1,6 @@
 // Bun Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Post renders correctly 1`] = `
+exports[`Project renders correctly 1`] = `
 {
   "$$typeof": Symbol(react.test.json),
   "children": [
@@ -10,12 +10,12 @@ exports[`Post renders correctly 1`] = `
         {
           "$$typeof": Symbol(react.test.json),
           "children": [
-            "All Posts",
+            "All Projects",
           ],
           "props": {
             "aria-current": undefined,
             "className": "",
-            "href": "/posts",
+            "href": "/projects",
             "onClick": [Function],
             "onMouseEnter": [Function],
           },

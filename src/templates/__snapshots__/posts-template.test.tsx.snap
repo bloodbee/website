@@ -1,6 +1,6 @@
 // Bun Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TagTemplate renders correctly 1`] = `
+exports[`PostsTemplate renders correctly 1`] = `
 {
   "$$typeof": Symbol(react.test.json),
   "children": [
@@ -51,7 +51,7 @@ exports[`TagTemplate renders correctly 1`] = `
                       "props": {
                         "className": undefined,
                       },
-                      "type": "h2",
+                      "type": "h1",
                     },
                   ],
                   "props": {
@@ -442,16 +442,6 @@ exports[`TagTemplate renders correctly 1`] = `
         {
           "$$typeof": Symbol(react.test.json),
           "children": [
-            {
-              "$$typeof": Symbol(react.test.json),
-              "children": [
-                "Typography",
-              ],
-              "props": {
-                "className": undefined,
-              },
-              "type": "h1",
-            },
             {
               "$$typeof": Symbol(react.test.json),
               "children": [

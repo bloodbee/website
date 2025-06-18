@@ -1,6 +1,6 @@
 // Bun Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PostTemplate renders correctly 1`] = `
+exports[`ProjectTemplate renders correctly 1`] = `
 {
   "$$typeof": Symbol(react.test.json),
   "children": [
