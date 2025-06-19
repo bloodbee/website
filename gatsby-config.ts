@@ -17,14 +17,6 @@ export default {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-netlify",
-      options: {
-        mergeSecurityHeaders: true, // boolean to turn off the default security headers
-        mergeCachingHeaders: true, // boolean to turn off the default caching headers
-        generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
-      },
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "content",
@@ -188,5 +180,7 @@ export default {
         },
       },
     },
+    "gatsby-plugin-netlify",
+    "@netlify/plugin-gatsby"
   ],
 };
