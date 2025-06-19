@@ -20,7 +20,7 @@ tags:
 ---
 Good morning, dear readers,
 
-It's been a long time since I've done a post! Do you remember, in this [post](https://bloodbee.space/blog/travel-technological-retreat-15-month), I mentioned the fact that I was entering a professional master's degree at [Epitech](https://www.epitech.eu/)?
+It's been a long time since I've done a post! Do you remember, in this [post](https://bloodbee.space/post/2019-08-01--travel-technological-retreat-15-months), I mentioned the fact that I was entering a professional master's degree at [Epitech](https://www.epitech.eu/)?
 **That was 2 years ago.**
 
 It's done and I think that a little feedback is needed. <i class="color-info far fa-thumbs-up"></i>
