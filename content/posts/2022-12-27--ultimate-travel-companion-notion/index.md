@@ -133,4 +133,4 @@ In summary, the travel planner template I have presented is a practical and effe
 
 I hope this template will help you plan your next holidays with ease and peace of mind. **Enjoy your trip!** <i class="fas fa-plane"></i>
 
-<a href="https://notioncanvatemplates.gumroad.com/l/ultimatetravel-notion" target="_blank" class="call-to-action">Discover the template</button>
+<a href="https://notioncanvatemplates.gumroad.com/l/ultimatetravel-notion" target="_blank" class="call-to-action">Discover the template</a>
