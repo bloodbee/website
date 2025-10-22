@@ -8,6 +8,7 @@ website: 'https://blockwall.app/'
 draft: false
 date: "2025-10-22T19:00:00.000Z"
 dateCreation: "2025-10-22T00:00:00.000Z"
+category: "Web development"
 description: Advertise differently - rent a block with web3. Vibecoded in 2 weeks.
   - cryptocurrency
   - side project
