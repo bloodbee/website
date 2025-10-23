@@ -14,7 +14,7 @@ const useCategoriesList = () => {
     query CategoriesListQuery {
       allMarkdownRemark(
         filter: {
-          frontmatter: { template: { eq: "post" }, draft: { ne: true } }
+          frontmatter: { template: { in: ["post", "project"] }, draft: { ne: true } }
         }
       ) {
         group(field: { frontmatter: { category: SELECT } }) {

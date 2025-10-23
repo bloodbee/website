@@ -25,10 +25,11 @@ const CategoryTemplate: FC<CategoryTemplateProps> = ({ data, pageContext }) => {
 
   const { edges } = data.allMarkdownRemark;
 
+  const title = `Category: ${group}`;
   return (
     <Layout>
       <Sidebar />
-      <Page title={group}>
+      <Page title={title}>
         <Feed edges={edges} />
         <Pagination
           prevPagePath={prevPagePath}
@@ -49,7 +50,7 @@ export const query = graphql`
       filter: {
         frontmatter: {
           category: { eq: $group }
-          template: { eq: "post" }
+          template: { in: ["post", "project"] }
           draft: { ne: true }
         }
       }
@@ -67,6 +68,9 @@ export const query = graphql`
             title
             date
             slug
+            socialImage {
+              publicURL
+            }
           }
         }
       }

@@ -14,3 +14,21 @@ I try not to be overbooked and overwhelmed by the projects, so I suggest that yo
 + You have a company and you can offer me a **good opportunity**. (Why not?)
 + You like **cryptocurrencies** (as I do) and want to **invest** in it, but don't know how.
 + You want to buy me **a beer or a coffee**, just because you think I'm cool.
+
+<form id="contact" name="contact" method="POST" data-netlify="true">
+  <p>
+    <label for="name">Your Name:</label>
+    <input id="name" type="text" name="name" />
+  </p>
+  <p>
+    <label for="email">Your Email:</label>
+    <input id="email" type="email" name="email" />
+  </p>
+  <p>
+    <label for="message">Message:</label>
+    <textarea rows="10" id="message" name="message"></textarea>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>

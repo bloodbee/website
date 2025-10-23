@@ -78,3 +78,31 @@ img:hover {
     transform: scale(1.04) !important;
 }
 
+#contact button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 8px 20px 8px 20px;
+    border-radius: 4px;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact button:hover {
+    cursor: pointer;
+}
+
+#contact p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#contact p input, #contact p textarea {
+    width: 70%;
+}
+
+#contact p textarea {
+    resize: none;
+}

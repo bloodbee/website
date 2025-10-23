@@ -105,7 +105,7 @@ Deploys are on Vercel, though other providers would do fine.
 
 For better performances: downscale images (not GIFs), lazy images/video, aggressive caching for assets.
 
-## What was hard (and how I fixed it)
+## V. What was hard (and how I fixed it)
 
 Here is an extensive list of my differents fails and what i've done to fix them:
 - RPC 403 in production (public Solana endpoint): switched to Helius with env-based RPC URLs.
