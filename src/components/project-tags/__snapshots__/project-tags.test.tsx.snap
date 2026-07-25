@@ -1,6 +1,6 @@
 // Bun Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PostTags renders correctly 1`] = `
+exports[`ProjectTags renders correctly 1`] = `
 {
   "$$typeof": Symbol(react.test.json),
   "children": [
