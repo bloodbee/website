@@ -1,9 +1,16 @@
 @use "src/assets/styles/variables";
+@use "src/assets/styles/mixins";
 
 .layout {
   display: grid;
   margin: 0 auto;
   gap: variables.$layout-gap;
-  max-width: variables.$layout-width;
+  max-width: 100%;
   grid-template-columns: repeat(12, 1fr);
+}
+
+@include mixins.breakpoint-sm {
+  .layout {
+    max-width: variables.$layout-width;
+  }
 }
